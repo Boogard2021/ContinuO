@@ -1,0 +1,68 @@
+Optimum Start Time Variables:
+
+ Rdc_1=0.4810;
+Rdc_2=0.4306;
+Rdc_3=0.7341;
+Rdc_4=0.7915;
+Rdc_5=0.5454;
+Rdc_6=0.9123;
+Rdc_7=0.6872;
+Rdc_8=0.8266;
+Optimum Start Time Variables:
+
+ Rac_1=0.2619;
+Rac_2=0.5011;
+Rac_3=0.2500;
+Rac_4=0.7500;
+{Unrecognized function or variable 'Rac_5'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Optimization', 'A:\Research\Matlab (Quadruped)\Kshvz (New Quad)\Optimization.m', 65)" style="font-weight:bold">Optimization</a> (<a href="matlab: opentoline('A:\Research\Matlab (Quadruped)\Kshvz (New Quad)\Optimization.m',65,0)">line 65</a>)
+    fprintf('Rac_5=%6.4f;\n', Rac_5);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+evalin('caller', strcat(script, ';'));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main', 'A:\Research\Matlab (Quadruped)\Kshvz (New Quad)\main.m', 138)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('A:\Research\Matlab (Quadruped)\Kshvz (New Quad)\main.m',138,0)">line 138</a>)
+    run Optimization
+} 
+opentoline('A:\Research\Matlab (Quadruped)\Kshvz (New Quad)\Optimization.m',65,0)
+main
+Operation Mode:
+     0. Walking
+     1. Trotting
+     2. Walking with Start and End Pahse
+     3. Walking Optimization
+     4. Start Pahse Optimization
+     5. End Pahse Optimization
+
+Please input the number of operation mode: 4
+
+
+Walking On Flat Surface
+Speed:   0.10 Km/h
+Step Length:    5.0 cm
+Stride:      2
+Step_Time:     10 msec
+
+Optimization Process ...
+
+ Rac_1:0.2619   Rac_2:0.5011   Rac_3:0.2500   Rac_4:0.7500   Rac_5:0.8830  ini1:0.5000   ini2:0.5000   J:200.0000
+\n Done!\n\n
+
+u =
+
+    0.2619    0.5011    0.2500    0.7500    0.8830    0.5000    0.5000  200.0000
+
+
+J_opt =
+
+   200
+
+Optimum Start Time Variables:
+
+ Rac_1=0.2619;
+Rac_2=0.5011;
+Rac_3=0.2500;
+Rac_4=0.7500;
+ini1=0.8830;
+ini2=0.5000;

@@ -6,13 +6,13 @@ x_p = r_p(1);
 y_p = r_p(2);
 z_p = r_p(3);
 q_p = r(4:6); % pelvis rotation
-alpha_p = q_p(1);
-beta_p = q_p(2);
-gamma_p = q_p(3);
+theta_p = q_p(1);
+phi_p = q_p(2);
+psi_p = q_p(3);
 
-R_p_x = rot(1,alpha_p,4);
-R_p_y = rot(2,beta_p,4);
-R_p_z = rot(3,gamma_p,4);
+R_p_x = rot(1,theta_p,4);
+R_p_y = rot(2,phi_p,4);
+R_p_z = rot(3,psi_p,4);
 R0 = R_p_z*R_p_y*R_p_x;
 P_p = trans([],r_p);
 

@@ -5,9 +5,9 @@ y_p = r_p(2);
 z_p = r_p(3);
 
 q_p = p(4:6); % Base rotation
-alpha_p = q_p(1);
-beta_p  = q_p(2);
-gamma_p = q_p(3);
+theta_p = q_p(1);
+phi_p  = q_p(2);
+psi_p = q_p(3);
 
 r_fr = p(7:9); % Front Right foot position
 x_fr = r_fr(1);
@@ -35,9 +35,9 @@ global redundant
 % global  L_sh L_th_f L_th_h L_th_h_mid    
 %% Rotation Matrix
 % Body Rotation Matrix
-R_p_x =   rot(1,alpha_p,4);
-R_p_y =   rot(2,beta_p,4);
-R_p_z =   rot(3,gamma_p,4);
+R_p_x =   rot(1,theta_p,4);
+R_p_y =   rot(2,phi_p,4);
+R_p_z =   rot(3,psi_p,4);
 R0=R_p_z*R_p_y*R_p_x; % Body Rotation Matrix
 
 %% Translation Matrix

@@ -13,7 +13,7 @@ gamma_p = q_p(3);
 R_p_x = rot(1,alpha_p,4);
 R_p_y = rot(2,beta_p,4);
 R_p_z = rot(3,gamma_p,4);
-R0 = R_p_y*R_p_z*R_p_x;
+R0 = R_p_z*R_p_y*R_p_x;
 P_p = trans([],r_p);
 
 if leg==1

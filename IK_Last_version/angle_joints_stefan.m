@@ -38,7 +38,7 @@ global redundant
 R_p_x =   rot(1,alpha_p,4);
 R_p_y =   rot(2,beta_p,4);
 R_p_z =   rot(3,gamma_p,4);
-R0=R_p_y*R_p_z*R_p_x; % Body Rotation Matrix
+R0=R_p_z*R_p_y*R_p_x; % Body Rotation Matrix
 
 %% Translation Matrix
 % Base in the World frame

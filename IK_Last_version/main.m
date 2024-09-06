@@ -3,36 +3,59 @@ clear all;
 close all;
 clc;
 
-global L1 L2 L3 L4
+global L1 L2 L3 L4 L_b W_b
 
-L1= [53.26 61.84 0.1]/1000; % Length of hip
-L2= 201/1000; % Length of hind thigh  [0 46.5 201]
-L3= 246.5/1000; % Length of middle hind thigh [0 63.5 246.5]
-% L4=[-77.18 -145 -280.52]/1000; % Length of shank
-L4=[0 0 190.62]/1000; % Length of shank  280.52  190.62
+L1 = [53.26 206.84 0.1]/1000; % Length of hip
+L2 = 201/1000; % Length of hind thigh  
+L3 = 246.5/1000; % Length of middle hind thigh 
+L4 = [77.21 0 190.62]/1000; % Length of shank   dx = 77.21/1000 
+L_b = 527/1000; % Length of body
+W_b = 245.81/1000; % Width of body    
 
 color_list = {'blue', 'red','green', 'black'};
 
-% p_global = [-53.2600 -61.8400 -638.2200]'/1000;  % zero position -728.12
-% p_global = [-130.61 -95.84 -620.05]'/1000;
-% p_global = [-226.55 -153.84 -463.83]'/1000;
-p_global = [192.46 -206.84 18.8]'/1000;
+%% Position of the base
+r_p = [0.0 0.0 0.0]'/1000;
+angle_p = [0.0 0.0 0.0]'*pi/180;
+R_p_x =   rot(1,angle_p(1),4);
+R_p_y =   rot(2,angle_p(2),4);
+R_p_z =   rot(3,angle_p(3),4);
+R0=R_p_z*R_p_y*R_p_x; % Body Rotation Matrix
 
-r_0_sho = [-0,-0,0]'/1000;
-alpha =10*pi/180;
-offset_y = 145/1000;
+base_pos = [r_p, angle_p];
+%%
+P_p = trans([],r_p);
 
-delta_y = r_0_sho(2)-p_global(2); % SV: removed abs()
-%     delta_y = abs(r_0_sho_hl(2)-y_hl);
-delta_z = abs(r_0_sho(3)-p_global(3));
+r_b_sho_hr = trans([],[-L_b/2,-W_b/2,0]);
+r_b_sho_hl = trans([],[-L_b/2,W_b/2,0]);
+r_b_sho_fr = trans([],[L_b/2,-W_b/2,0]);
+r_b_sho_fl = trans([],[L_b/2,W_b/2,0]);
+
+r_w_sho_hr =  P_p*R0*r_b_sho_hr*[0;0;0;1];
+r_w_sho_hl =  P_p*R0*r_b_sho_hl*[0;0;0;1];
+r_w_sho_fr =  P_p*R0*r_b_sho_fr*[0;0;0;1];
+r_w_sho_fl =  P_p*R0*r_b_sho_fl*[0;0;0;1];
+
+body_pos= [r_w_sho_hr(1:3),r_w_sho_hl(1:3),r_w_sho_fr(1:3),r_w_sho_fl(1:3)];
+%% Position of foot 
+% p_global = [-393.96 -329.74 -638.29]'/1000;  % zero position 
+% p_global = [-393.96 -229.74 -638.29]'/1000;
+p_global = [-323.96 -229.74 -438.29]'/1000;
+% p_global = [-323.96 -229.74 -258.29]'/1000;
+
+%%
+alpha = 0*pi/180;
+%offset_y = 145/1000;
+
+delta_y = r_w_sho_hr(2)-p_global(2); % SV: removed abs()
+delta_z = abs(r_w_sho_hr(3)-p_global(3));
 
 h = sqrt(delta_y^2+delta_z^2);
 q1 = -atan2(delta_y,delta_z)+asin((L1(2))/h); % SV: updated atan2 and sign => q1 should be positive when hip above shoulder (right and left now different)
-%     q1_hl= atan(delta_y/delta_z)-asin((L_h(2))/h);
 Rq1 = rot(1,q1,4);
 P_sho_hip = trans([],[-L1(1),-L1(2),-L1(3)]);
 
-r_0_hip=   Rq1*P_sho_hip*[0;0;0;1];
+r_0_hip=   P_p*R0*r_b_sho_hr*Rq1*P_sho_hip*[0;0;0;1];
 
 % SV: new x-r plane calcs
 dx = p_global(1) - r_0_hip(1); % SV: hip to foot dx
@@ -41,8 +64,9 @@ dz = p_global(3) - r_0_hip(3); % SV: hip to foot dz
 
 dr_foot = sqrt(dy^2+dz^2); % positive and increasing as foot moves away from hip
 
-dx_ankle = dx - L4(3)*sin(alpha); % hip to ankle dx
-dr_ankle = dr_foot - L4(3)*cos(alpha); % hip to ankle dr
+% rr = sqrt(L4(1)^2+L4(3)^2);
+dx_ankle = dx - L4(3)*sin(alpha) + L4(1)*cos(alpha); % hip to ankle dx   
+dr_ankle = dr_foot - L4(3)*cos(alpha); % hip to ankle dr L4(3)*cos(alpha)
 
 h_1 = sqrt(dx_ankle^2+dr_ankle^2); % hyp. to ankle in x-r plane
 phi = asin(dx_ankle/h_1); % angle to h_1 from r
@@ -66,9 +90,9 @@ end
 
 q4= -q2-q3-alpha;
 q_new =[q1,q2,q3,q4];
-Pos = FK(q_new); %q_new
+foot_Pos = FK(q_new, base_pos); %q_new
 figure
 view(3)
-Visualize_Robot(Pos, p_global, color_list) %Pos(:,3)
+Visualize_Robot(body_pos,foot_Pos, p_global, color_list) %Pos(:,3)
 pause(0.1);
 

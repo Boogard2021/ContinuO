@@ -26,6 +26,10 @@ Rq2_hr = rot(2,q2_hl,4);
 Rq3_hr = rot(2,q3_hl,4);
 Rq4_hr = rot(2,q4_hl,4);
 
+% Why is L_h(3)=0.17 mm here, vs. 0.1 mm elsewhere (e.g., in main.m)? Also,
+% is it important to split the y-offset for links 1-3 here vs. grouping in
+% link 1 as done for IK? Should I add to my writeup? This means the FK
+% positions of frames 1-2 are different than IK.
 L_h = [53.26, 61.34, 0.17]/1000;
 L_th_h_mid = [0.0, 92.88, 201.0]/1000;
 L_th_h = [0.0, 52.62, 246.5]/1000;

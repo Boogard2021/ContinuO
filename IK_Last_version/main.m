@@ -40,13 +40,13 @@ body_pos= [r_w_sho_hr(1:3),r_w_sho_hl(1:3),r_w_sho_fr(1:3),r_w_sho_fl(1:3)];
 %% Position of foot 
 % p_global = [-393.96 -329.74 -638.29]'/1000;  % zero position 
 % p_global = [-393.96 -229.74 -638.29]'/1000;
-p_global = [-323.96 -229.74 -438.29]'/1000;
-% p_global = [-323.96 -229.74 -258.29]'/1000;
+% p_global = [-323.96 -229.74 -438.29]'/1000;
+p_global = [-393.96 -329.74 -38.29]'/1000;
+% p_global = [-323.96 -229.74 -188.29]'/1000;
 
 %%
-alpha = 0*pi/180;
-%offset_y = 145/1000;
 
+alpha = 0*pi/180:-0.2*pi/180:-75*pi/180;
 delta_y = r_w_sho_hr(2)-p_global(2); % SV: removed abs()
 delta_z = abs(r_w_sho_hr(3)-p_global(3));
 
@@ -61,38 +61,45 @@ r_0_hip=   P_p*R0*r_b_sho_hr*Rq1*P_sho_hip*[0;0;0;1];
 dx = p_global(1) - r_0_hip(1); % SV: hip to foot dx
 dy = p_global(2) - r_0_hip(2); % SV: hip to foot dy
 dz = p_global(3) - r_0_hip(3); % SV: hip to foot dz
-
 dr_foot = sqrt(dy^2+dz^2); % positive and increasing as foot moves away from hip
 
-% rr = sqrt(L4(1)^2+L4(3)^2);
-dx_ankle = dx - L4(3)*sin(alpha) + L4(1)*cos(alpha); % hip to ankle dx   
-dr_ankle = dr_foot - L4(3)*cos(alpha); % hip to ankle dr L4(3)*cos(alpha)
+for i = 1: length(alpha)
+    dx_ankle = dx - L4(3)*sin(alpha(i)) + L4(1)*cos(alpha((i))); % hip to ankle dx
+    dr_ankle = dr_foot - L4(3)*cos(alpha(i)); % hip to ankle dr L4(3)*cos(alpha)
 
-h_1 = sqrt(dx_ankle^2+dr_ankle^2); % hyp. to ankle in x-r plane
-phi = asin(dx_ankle/h_1); % angle to h_1 from r
+    h_1 = sqrt(dx_ankle^2+dr_ankle^2); % hyp. to ankle in x-r plane
+    phi = asin(dx_ankle/h_1); % angle to h_1 from r
 
 
-if abs((h_1^2+L2^2-L3^2)/(2*h_1*L2))>1
-    ratio = 1; % SV: changed sign, should be >0 now like right leg above
-    q2 =0;
-else
-    ratio = (h_1^2+L2^2-L3^2)/(2*h_1*L2);
-    q2 = -phi-acos(ratio); %% SV: -phi because dx>0 in same direction as x, q2>0 when knee behind hip
+    if abs((h_1^2+L2^2-L3^2)/(2*h_1*L2))>1
+        ratio = 1; % SV: changed sign, should be >0 now like right leg above
+        q2 =0;
+    else
+        ratio = (h_1^2+L2^2-L3^2)/(2*h_1*L2);
+        q2 = -phi-acos(ratio); %% SV: -phi because dx>0 in same direction as x, q2>0 when knee behind hip
+    end
+    % q2_hl = -acos(ratio)+phi; %%%%%%%%%%%%%
+    if abs((L3^2+L2^2-h_1^2)/(2*L3*L2))>1
+        ratio1 = 1;
+        q3=0;
+    else
+        ratio1 = (L3^2+L2^2-h_1^2)/(2*L2*L3);
+        q3 = pi-acos(ratio1);
+    end
+
+    q4= -q2-q3-alpha(i);
+    q_new(i,:) =[q1,q2,q3,q4];
+    foot_Pos = FK(q_new(i,:), base_pos); %q_new
+    error(i) = sqrt((foot_Pos(1,5)-p_global(1))^2+(foot_Pos(2,5)-p_global(2))^2+(foot_Pos(3,5)-p_global(3))^2); % root square error
 end
-% q2_hl = -acos(ratio)+phi; %%%%%%%%%%%%%
-if abs((L3^2+L2^2-h_1^2)/(2*L3*L2))>1
-    ratio1 = 1;
-    q3=0;
-else
-    ratio1 = (L3^2+L2^2-h_1^2)/(2*L2*L3);
-    q3 = pi-acos(ratio1);
-end
+plot(alpha*180/pi, error) 
+[minError, minIndex] = min(error);
+minAlpha = alpha(minIndex);
+foot_Pos_min = FK(q_new(minIndex,:), base_pos);
 
-q4= -q2-q3-alpha;
-q_new =[q1,q2,q3,q4];
-foot_Pos = FK(q_new, base_pos); %q_new
 figure
 view(3)
-Visualize_Robot(body_pos,foot_Pos, p_global, color_list) %Pos(:,3)
+Visualize_Robot(body_pos,foot_Pos_min, p_global, color_list) %Pos(:,3)
 pause(0.1);
+
 

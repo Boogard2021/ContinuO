@@ -53,11 +53,25 @@ p_global = [-393.96 -329.74 -38.29]'/1000;
 %%
 
 alpha = 0*pi/180:-0.2*pi/180:-75*pi/180;
-delta_y = r_w_sho_hr(2)-p_global(2); % SV: removed abs()
-delta_z = abs(r_w_sho_hr(3)-p_global(3));
+% TODO: cleanup commented code after testing
+% delta_y = r_w_sho_hr(2)-p_global(2); % SV: removed abs()
+% delta_z = abs(r_w_sho_hr(3)-p_global(3));
 
-h = sqrt(delta_y^2+delta_z^2);
-q1 = -atan2(delta_y,delta_z)+asin((L1(2))/h); % SV: updated atan2 and sign => q1 should be positive when hip above shoulder (right and left now different)
+% vector from joint 1 to 5 (foot) in joint 1_hr frame:
+p_1_5_hr = transpose(R0)*(p_global - r_w_sho_hr); 
+
+% h = sqrt(delta_y^2+delta_z^2);
+% q1 = -atan2(delta_y,delta_z)+asin((L1(2))/h); % SV: updated atan2 and sign 
+% => q1 should be positive when hip above shoulder (right and left now different)
+
+% h using joint 1 frame instead of delta_y & z:
+h = sqrt(p_1_5_hr(2)^2 + p_1_5_hr(3)^2);
+
+% hr q1 using joint 1 frame and with q1 positive when hip above shoulder 
+% (right and left now different). atan2 discontinuity rotated to an 
+% unattainable point (along y_1 axis) (by -pi/2):
+q1 = atan2(-p_1_5_hr(3), -p_1_5_hr(2))+ asin(L1(2)/h) - pi/2; 
+
 Rq1 = rot(1,q1,4);
 P_sho_hip = trans([],[-L1(1),-L1(2),-L1(3)]);
 

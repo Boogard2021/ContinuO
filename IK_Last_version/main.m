@@ -58,7 +58,7 @@ alpha = 0*pi/180:-0.2*pi/180:-75*pi/180;
 % delta_z = abs(r_w_sho_hr(3)-p_global(3));
 
 % vector from joint 1 to 5 (foot) in joint 1_hr frame:
-p_1_5_hr = transpose(R0)*(p_global - r_w_sho_hr); 
+p_1_5_hr = transpose(R0(1:3,1:3)) * (p_global - r_w_sho_hr(1:3)); 
 
 % h = sqrt(delta_y^2+delta_z^2);
 % q1 = -atan2(delta_y,delta_z)+asin((L1(2))/h); % SV: updated atan2 and sign 

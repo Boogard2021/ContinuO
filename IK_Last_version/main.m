@@ -72,39 +72,56 @@ h = sqrt(p_1_5_hr(2)^2 + p_1_5_hr(3)^2);
 % unattainable point (along y_1 axis) (by -pi/2):
 q1 = atan2(-p_1_5_hr(3), -p_1_5_hr(2))+ asin(L1(2)/h) - pi/2; 
 
-Rq1 = rot(1,q1,4);
-P_sho_hip = trans([],[-L1(1),-L1(2),-L1(3)]);
+% Renamed several for consistency with writeup notation & clarity.
+R_1_2_hr = rot(1,q1,4); 
+R_0_2_hr = R0 * R_1_2_hr;
 
-r_0_hip=   P_p*R0*r_b_sho_hr*Rq1*P_sho_hip*[0;0;0;1];
+P_1_2_hr = trans([],[-L1(1),-L1(2),-L1(3)]);
+p_0_2_hr = P_p*R0*r_b_sho_hr*R_1_2_hr*P_1_2_hr*[0;0;0;1];
 
-% SV: new x-r plane calcs
-dx = p_global(1) - r_0_hip(1); % SV: hip to foot dx
-dy = p_global(2) - r_0_hip(2); % SV: hip to foot dy
-dz = p_global(3) - r_0_hip(3); % SV: hip to foot dz
-dr_foot = sqrt(dy^2+dz^2); % positive and increasing as foot moves away from hip
+% Vector from frame 2 to 5 in joint 2 frame:
+p_2_5_hr = transpose(R_0_2_hr(1:3,1:3)) * (p_global - p_0_2_hr(1:3));
 
+% % SV: new x-r plane calcs
+% dx = p_global(1) - r_0_hip(1); % SV: hip to foot dx
+% dy = p_global(2) - r_0_hip(2); % SV: hip to foot dy
+% dz = p_global(3) - r_0_hip(3); % SV: hip to foot dz
+% dr_foot = sqrt(dy^2+dz^2); % positive and increasing as foot moves away from hip
+
+%%
 for i = 1: length(alpha)
-    dx_ankle = dx - L4(3)*sin(alpha(i)) + L4(1)*cos(alpha((i))); % hip to ankle dx
-    dr_ankle = dr_foot - L4(3)*cos(alpha(i)); % hip to ankle dr L4(3)*cos(alpha)
+    % Vector from frame 5 to 4 (notice order) in joint 2 frame as a function of alpha:
+    p_2_5_4 = [L4(1)*cos(alpha(i)) - L4(3)*sin(alpha(i)); 0; L4(1)*sin(alpha(i)) + L4(3)*cos(alpha(i))];
+    
+    p_2_4_hr = p_2_5_hr + p_2_5_4; % Vector from frame 2 to 4 in joint 2 frame.
 
-    h_1 = sqrt(dx_ankle^2+dr_ankle^2); % hyp. to ankle in x-r plane
-    phi = asin(dx_ankle/h_1); % angle to h_1 from r
+%   Angle between z_2 axis and p_2_4_hr, with dextral sign. Renamed from
+%   phi to avoid confusion with body rotation angle.
+    beta = atan2(-p_2_4_hr(1)^2, -p_2_4_hr(3)^2); 
 
+%     dx_ankle = dx - L4(3)*sin(alpha(i)) + L4(1)*cos(alpha((i))); % hip to ankle dx
+%     dr_ankle = dr_foot - L4(3)*cos(alpha(i)); % hip to ankle dr L4(3)*cos(alpha)
 
-    if abs((h_1^2+L2^2-L3^2)/(2*h_1*L2))>1
-        ratio = 1; % SV: changed sign, should be >0 now like right leg above
-        q2 =0;
+%     h_1 = sqrt(dx_ankle^2+dr_ankle^2); % hyp. to ankle in x-r plane
+%     phi = asin(dx_ankle/h_1); % angle to h_1 from r
+
+% norm(p_2_4_hr) is the magnitude (2-norm) of the vector p_2_4_hr,
+% equivalent to h_1 previously used:
+% Also, I don't know if the domain check is still necessary:
+    if abs((norm(p_2_4_hr)^2+L2^2-L3^2)/(2*norm(p_2_4_hr)*L2))>1
+        ratio = 1; 
+        q2 = 0;
     else
-        ratio = (h_1^2+L2^2-L3^2)/(2*h_1*L2);
-        q2 = -phi-acos(ratio); %% SV: -phi because dx>0 in same direction as x, q2>0 when knee behind hip
+        ratio = (norm(p_2_4_hr)^2+L2^2-L3^2)/(2*norm(p_2_4_hr)*L2);
+        q2 = -acos(ratio) + beta; % Note change in sign because of orientation of beta.
     end
     % q2_hl = -acos(ratio)+phi; %%%%%%%%%%%%%
-    if abs((L3^2+L2^2-h_1^2)/(2*L3*L2))>1
+    if abs((L3^2+L2^2-norm(p_2_4_hr)^2)/(2*L3*L2))>1
         ratio1 = 1;
-        q3=0;
+        q3 = 0;
     else
-        ratio1 = (L3^2+L2^2-h_1^2)/(2*L2*L3);
-        q3 = pi-acos(ratio1);
+        ratio1 = (L3^2+L2^2-norm(p_2_4_hr)^2)/(2*L3*L2);
+        q3 = -acos(ratio1) + pi;
     end
 
     q4= -q2-q3-alpha(i);

@@ -29,7 +29,8 @@ Rq4_hr = rot(2,q4_hl,4);
 L_h = [53.26, 61.34, 0.17]/1000;
 L_th_h_mid = [0.0, 92.88, 201.0]/1000;
 L_th_h = [0.0, 52.62, 246.5]/1000;
-L_sh = [77.21, 0.0, 190.62]/1000;
+% Adjusted L_sh to put foot under frame 4 in zero pose, as discussed.
+L_sh = [0.0, 0.0, norm([77.21, 190.62])]/1000; 
 P_hip_hr = trans([],[-L_h(1);-L_h(2);-L_h(3)]);
 P_knee_mid_hr = trans([],[-L_th_h_mid(1);-L_th_h_mid(2);-L_th_h_mid(3)]);
 P_knee_hr = trans([],[-L_th_h(1);-L_th_h(2);-L_th_h(3)]);

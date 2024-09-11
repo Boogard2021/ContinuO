@@ -5,16 +5,13 @@ clc;
 
 global L1 L2 L3 L4 L_b W_b
 
-% SV: is the L1(3)=0.1 mm accurate and necessary (vs. setting to 0)? I 
-% had (maybe mistakenly) neglected this in my writeup as I thought link 
-% 1 lay in the x1-y1 plane in zero pose. If necessary I can add.
 L1 = [53.26 206.84 0.1]/1000; % Length of hip
 L2 = 201/1000; % Length of hind thigh  
 L3 = 246.5/1000; % Length of middle hind thigh 
-% SV: I neglected the x-component of L4 in my writeup. To be corrected. To
-% discuss: do we prefer to have x and z component in zero pose, or instead
-% make zero pose when foot is directly under ankle (x = 0, z adjusted)?
-L4 = [77.21 0 190.62]/1000; % Length of shank   dx = 77.21/1000
+% SV: As discussed, will set the zero position to the point with frame 5
+% directly under frame 4 (on z4 axis). Length between frame 4 and 5 then equal
+% to sqrt(77.21^2 + 190.62^2) = 205.66 mm.
+L4 = norm([77.21 0 190.62])/1000; % Length of shank   dx = 77.21/1000
 L_b = 527/1000; % Length of body
 W_b = 245.81/1000; % Width of body    
 
@@ -91,7 +88,7 @@ p_2_5_hr = transpose(R_0_2_hr(1:3,1:3)) * (p_global - p_0_2_hr(1:3));
 %%
 for i = 1: length(alpha)
     % Vector from frame 5 to 4 (notice order) in joint 2 frame as a function of alpha:
-    p_2_5_4 = [L4(1)*cos(alpha(i)) - L4(3)*sin(alpha(i)); 0; L4(1)*sin(alpha(i)) + L4(3)*cos(alpha(i))];
+    p_2_5_4 = [-L4*sin(alpha(i)); 0; L4*cos(alpha(i))];
     
     p_2_4_hr = p_2_5_hr + p_2_5_4; % Vector from frame 2 to 4 in joint 2 frame.
 

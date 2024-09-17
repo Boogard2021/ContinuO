@@ -41,9 +41,13 @@ r_w_sho_fl =  P_p*R0*r_b_sho_fl*[0;0;0;1];
 
 body_pos= [r_w_sho_hr(1:3),r_w_sho_hl(1:3),r_w_sho_fr(1:3),r_w_sho_fl(1:3)];
 %% Position of foot 
-% p_global = [-393.96+77.21 -329.74 -638.29+(norm([77.21, 190.62])-190.62)]'/1000;  % adjusted zero position
-p_global = [-393.96+77.21 -329.74 -438.29+(norm([77.21, 190.62])-190.62)]'/1000;
-% p_global = [-393.96 -329.74 -638.29]'/1000;  % zero position 
+p_global = [-393.96+77.21 -329.74 -638.29-(norm([77.21, 190.62])-190.62)]'/1000;  % adjusted zero position
+% p_global = [-393.96+77.21 -329.74 -438.29-(norm([77.21, 190.62])-190.62)]'/1000;
+% p_global = [-393.96+77.21 -329.74 -138.29-(norm([77.21, 190.62])-190.62)]'/1000;
+% p_global = [-393.96+77.21 -429.74 -438.29-(norm([77.21, 190.62])-190.62)]'/1000;
+% p_global = [-193.96+77.21 -329.74 -438.29-(norm([77.21, 190.62])-190.62)]'/1000;
+
+% p_global = [-393.96 -329.74 -638.29]'/1000;  % old zero position 
 % p_global = [-393.96 -229.74 -638.29]'/1000;
 % p_global = [-323.96 -229.74 -438.29]'/1000;
 % p_global = [-393.96 -329.74 -38.29]'/1000;
@@ -131,6 +135,7 @@ end
 plot(alpha*180/pi, error) 
 [minError, minIndex] = min(error);
 minAlpha = alpha(minIndex);
+fprintf("alpha = %.2f deg\nerror = %.2e m", minAlpha*180/pi, minError)
 foot_Pos_min = FK(q_new(minIndex,:), base_pos);
 
 figure

@@ -15,6 +15,7 @@ m_arm=0*500/1000; % Mass of Object
 m_total=m_b+m_arm+2*(2*m_hip+2*m_sh+m_th_f+m_th_h+m_th_h_mid);
 
 %% Length OK
+% TODO: update with new coordinate config
 L_h=[53.26 61.84 0.1]/1000; % Length of hip
 
 L_th_f=[0 0 246.5]/1000; % Length of front thigh

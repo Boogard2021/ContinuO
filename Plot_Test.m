@@ -4773,5 +4773,8 @@ elseif m==17
     set(get(gca,'title'),'FontSize',14);
     legend('Swing(Theory)','Swing(Simmech)','Stance(Theory)','Stance(Simmech)','Orientation','horizontal');
     set(gcf,'unit','normalized','position',[0,0,1,1]);
+
+    elseif m==18
+    run motion_simulation_diff
     
 end

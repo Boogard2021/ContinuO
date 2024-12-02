@@ -1,4 +1,4 @@
-function motion_simulation
+function motion_simulation_diff
 %% Input
 global Ds Motion_Time
 global W_b ceiling_h1_z ceiling_h2_z ceiling_h3_z ceiling_h1_x ceiling_h2_x ceiling_h3_x 

@@ -33,20 +33,20 @@ r_ankle_hr = r(:,52:54);
 r_ankle_hl = r(:,55:57);
 
 %% prespective view
-az = 45;
-el = 25;
+% az = 45;
+% el = 25;
 %% front view
 % az = 90;  
 % el = 0;
 %% side view
-% az = 0;  
-% el = 0;
+az = 0;  
+el = 0;
 %% 3D PLOT
 % N=floor(t(end-1)-T_ac-T_dc-Td/(2*Tc));
 j=1;
 
 % figure
-k=5;
+k=10;
 % x_p=r_p(:,1);
 % X_p=(min(x_p):(max(x_p)-min(x_p))/k:max(x_p))';
 

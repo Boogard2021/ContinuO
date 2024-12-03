@@ -31,7 +31,7 @@ Tc=Ds*3.6/V;
 T_ac=0;
 T_dc=0;
     
-N=4;%Number of stride
+N=5;%Number of stride
 Step_Time=0.01; % step time
 
 fprintf('\n\nWalking On Flat Surface\n');

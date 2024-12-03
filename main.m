@@ -19,7 +19,7 @@ fprintf('     4. Start Pahse Optimization\n');
 fprintf('     5. End Pahse Optimization\n\n');
 SCR=input('Please input the number of operation mode: ');
 
-redundant = 0;
+redundant = 1;
 V=0.1; % Velocity of motion 0.1 0.2 0.3 0.4
 % Ds = 0.05;
 Ds = 0.1;
@@ -31,7 +31,7 @@ Tc=Ds*3.6/V;
 T_ac=0;
 T_dc=0;
     
-N=1;%Number of stride
+N=4;%Number of stride
 Step_Time=0.01; % step time
 
 fprintf('\n\nWalking On Flat Surface\n');

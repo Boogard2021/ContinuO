@@ -46,8 +46,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2010-08-07T16:47:38Z</dcterms:created>
   <dc:creator>saeed</dc:creator>
   <cp:lastModifiedBy>user</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-12-03T21:20:56Z</dcterms:modified>
-  <cp:revision>16.6</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-12-04T19:29:49Z</dcterms:modified>
+  <cp:revision>16.8</cp:revision>
   <cp:version>R2023b</cp:version>
 </cp:coreProperties>
 
@@ -123,7 +123,7 @@ q_i = [p_i(1:6); q_j];</P>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:16.6&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:16.8&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -954,8 +954,8 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2023a_20220628">
-  <System type="System" uuid="f5c73fd8-0508-40e9-9966-42b70bfad41c">
-    <Interface type="Interface" uuid="e98a85f4-7632-4306-9a38-556734b179c7"/>
+  <System type="System" uuid="ea20d2d6-58aa-44e8-a96f-59290ac84030">
+    <Interface type="Interface" uuid="4008126d-7c96-4a1f-8586-46fde19d8237"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
@@ -1689,8 +1689,6 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_84.xml
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
   <P Name="viewObj">84</P>
-  <P Name="visible">1</P>
-  <subviewS/>
   <P Name="ssIdHighWaterMark">14</P>
   <P Name="decomposition">CLUSTER_CHART</P>
   <P Name="type">EML_CHART</P>
@@ -2320,12 +2318,31 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[4516, 0, 6400, 2160]</P>
-  <P Name="ZoomFactor">223</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">200</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">92</P>
+  <P Name="SIDHighWatermark">95</P>
   <Block BlockType="Clock" Name="Clock2" SID="52">
     <P Name="Position">[630, 435, 650, 455]</P>
     <P Name="ZOrder">27</P>
+  </Block>
+  <Block BlockType="Display" Name="Display" SID="93">
+    <PortCounts in="1"/>
+    <P Name="Position">[1095, 54, 1170, 416]</P>
+    <P Name="ZOrder">59</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display1" SID="94">
+    <PortCounts in="1"/>
+    <P Name="Position">[990, -3, 1060, 363]</P>
+    <P Name="ZOrder">60</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Display" Name="Display2" SID="95">
+    <PortCounts in="1"/>
+    <P Name="Position">[1120, 526, 1460, 884]</P>
+    <P Name="ZOrder">61</P>
+    <P Name="Decimation">1</P>
   </Block>
   <Block BlockType="Integrator" Name="Integrator" SID="75">
     <PortCounts in="2" out="1"/>
@@ -2428,25 +2445,52 @@ Functions/MATLAB Function</P>
   <Line>
     <P Name="ZOrder">116</P>
     <P Name="Src">74#out:1</P>
-    <P Name="Dst">60#in:1</P>
+    <P Name="Points">[23, 0]</P>
+    <Branch>
+      <P Name="ZOrder">188</P>
+      <P Name="Points">[0, 42; -127, 0; 0, 193]</P>
+      <P Name="Dst">95#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">187</P>
+      <P Name="Dst">60#in:1</P>
+    </Branch>
   </Line>
   <Line>
     <P Name="ZOrder">120</P>
     <P Name="Src">73#out:1</P>
-    <P Name="Dst">75#in:1</P>
+    <P Name="Points">[20, 0]</P>
+    <Branch>
+      <P Name="ZOrder">185</P>
+      <P Name="Points">[0, -280]</P>
+      <P Name="Dst">94#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">184</P>
+      <P Name="Dst">75#in:1</P>
+    </Branch>
   </Line>
   <Line>
     <P Name="ZOrder">121</P>
     <P Name="Src">75#out:1</P>
     <P Name="Points">[24, 0]</P>
     <Branch>
+      <P Name="ZOrder">186</P>
+      <P Name="Points">[26, 0]</P>
+      <Branch>
+        <P Name="ZOrder">182</P>
+        <P Name="Points">[0, -235]</P>
+        <P Name="Dst">93#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">122</P>
+        <P Name="Dst">74#in:1</P>
+      </Branch>
+    </Branch>
+    <Branch>
       <P Name="ZOrder">175</P>
       <P Name="Points">[0, 70]</P>
       <P Name="Dst">76#in:1</P>
-    </Branch>
-    <Branch>
-      <P Name="ZOrder">122</P>
-      <P Name="Dst">74#in:1</P>
     </Branch>
   </Line>
   <Line>
@@ -2494,18 +2538,18 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <Object ObjectID="5">
           <P Name="IsActive" Class="logical">1</P>
           <P Name="IsTabbed" Class="logical">1</P>
-          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
-          <P Name="LoadSaveID" Class="char">73</P>
+          <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
+          <P Name="LoadSaveID" Class="char">0</P>
           <P Name="Extents" Class="double">[1846.0, 1919.0]</P>
-          <P Name="ZoomFactor" Class="double">1.0</P>
-          <P Name="Offset" Class="double">[0.0, 0.0]</P>
-          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+          <P Name="ZoomFactor" Class="double">2.0</P>
+          <P Name="Offset" Class="double">[609.69176780336136, 49.731465419069636]</P>
+          <P Name="SceneRectInView" Class="double">[609.69176780336136, 49.731465419069636, 923.0, 959.5]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
-          <P Name="LoadSaveID" Class="char">74</P>
+          <P Name="LoadSaveID" Class="char">73</P>
           <P Name="Extents" Class="double">[1846.0, 1919.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
@@ -2514,12 +2558,12 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <Object ObjectID="7">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
-          <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
-          <P Name="LoadSaveID" Class="char">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">74</P>
           <P Name="Extents" Class="double">[1846.0, 1919.0]</P>
-          <P Name="ZoomFactor" Class="double">2.2285714285714286</P>
-          <P Name="Offset" Class="double">[565.3584344700281, -41.23943607769246]</P>
-          <P Name="SceneRectInView" Class="double">[565.3584344700281, -41.23943607769246, 828.33333333333326, 861.08974358974353]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
         </Object>
         <Object ObjectID="8">
           <P Name="IsActive" Class="logical">0</P>

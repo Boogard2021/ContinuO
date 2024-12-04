@@ -1,6 +1,6 @@
 function motion_simulation_diff
 %% Input
-global Ds Motion_Time
+global Ds Motion_Time Step_Time
 global W_b ceiling_h1_z ceiling_h2_z ceiling_h3_z ceiling_h1_x ceiling_h2_x ceiling_h3_x 
 global N
 
@@ -46,9 +46,15 @@ el = 0;
 j=1;
 
 % figure
-k=10;
+k=5;
 % x_p=r_p(:,1);
 % X_p=(min(x_p):(max(x_p)-min(x_p))/k:max(x_p))';
+
+% Initialize video file
+motion_sim_video = VideoWriter('Figures/motionsim_animations/motionsim_anim');
+motion_sim_video.FrameRate = 1/(k*Step_Time);
+% motion_sim_video.Quality = 100;
+open(motion_sim_video)
 
 for u=1:k:length(t)
     %     [ti,i]=min(abs(x_p-X_p(u)));
@@ -101,19 +107,25 @@ for u=1:k:length(t)
     %% Settings
     view(az, el);
 %     view(90, 0);
-    axis(0.45*[-3.6 3.6 -1.8 1.8 -2.4 2.4],'square')
-    axis square
+    axis(0.3*[-2 5 -1.8 1.8 -0.5 2])
+    axis equal
     axis off
     grid off
     figure(gcf)
     drawnow
     hold off
     %% Save Frames
-    Fi(j-1)=getframe;   
+    Fi(j-1)=getframe;
+
+    frame = getframe(gcf);
+    writeVideo(motion_sim_video, frame);
+
     if i==1
         pause
         %     pause(3)
     end
 end
 hold off
+
+close(motion_sim_video)
 end

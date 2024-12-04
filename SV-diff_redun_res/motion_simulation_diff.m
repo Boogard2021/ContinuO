@@ -32,15 +32,25 @@ r_ankle_fl = r(:,49:51);
 r_ankle_hr = r(:,52:54);
 r_ankle_hl = r(:,55:57);
 
+% Desired trajectory
+d = simout_d.signals.values;
+
+p0b_d = d(:,1:3);
+qb_d = d(:,4:6);
+p0fr_d = d(:,7:9);
+p0fl_d = d(:,10:12);
+p0hr_d = d(:,13:15);
+p0hl_d = d(:,16:18);
+
 %% prespective view
-% az = 45;
-% el = 25;
+az = 45;
+el = 25;
 %% front view
 % az = 90;  
 % el = 0;
 %% side view
-az = 0;  
-el = 0;
+% az = 0;  
+% el = 0;
 %% 3D PLOT
 % N=floor(t(end-1)-T_ac-T_dc-Td/(2*Tc));
 j=1;
@@ -104,6 +114,20 @@ for u=1:k:length(t)
     %     plot3(r_unih_l(i,1),r_unih_l(i,2),r_unih_l(i,3),'ok','LineWidth',1)
     %     plot3(r_hip_l(i,1),r_hip_l(i,2),r_hip_l(i,3),'ok','LineWidth',1)
     %     plot3(r_tr(i,1),r_tr(i,2),r_tr(i,3),'ok','LineWidth',1)
+
+    %% Trajectory tracking
+    % Body frame position
+    plot3(p0b_d(1:i,1), p0b_d(1:i,2), p0b_d(1:i,3), '--g')
+    % FR foot position
+    plot3(p0fr_d(1:i,1), p0fr_d(1:i,2), p0fr_d(1:i,3), '--r')
+    % FL foot position
+    plot3(p0fl_d(1:i,1), p0fl_d(1:i,2), p0fl_d(1:i,3), '--b')
+    % HR foot position
+    plot3(p0hr_d(1:i,1), p0hr_d(1:i,2), p0hr_d(1:i,3), '--c')
+    % HL foot position
+    plot3(p0hl_d(1:i,1), p0hl_d(1:i,2), p0hl_d(1:i,3), '--m')
+
+
     %% Settings
     view(az, el);
 %     view(90, 0);

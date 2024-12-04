@@ -125,8 +125,10 @@ while m_cont~=0
 %     fprintf('     14. Motion Simulation\n');
 %     fprintf('     15. Data for Yobotics Software\n');
     fprintf('     16. Position and Velocity Data for Joints\n');
-    fprintf('     17. Simmech\n');
-    fprintf('     18. Differential IK Motion Simulation\n\n')
+    fprintf('     17. Simmech\n\n');
+    fprintf('     18. Differential IK Motion Simulation\n')
+    fprintf('     19. Differential IK Plots\n\n')
+
 
     m=input('Please input the number of plot mode: ');
 %     if m==0

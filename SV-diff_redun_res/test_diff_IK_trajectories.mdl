@@ -44,8 +44,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <cp:category>model</cp:category>
   <dcterms:created xsi:type="dcterms:W3CDTF">2024-12-05T20:46:47Z</dcterms:created>
   <cp:lastModifiedBy>stefa</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-12-05T20:46:47Z</dcterms:modified>
-  <cp:revision>16.16</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-12-05T21:42:33Z</dcterms:modified>
+  <cp:revision>16.17</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -121,7 +121,7 @@ q_i = [p_i(1:6); q_j];</P>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:16.16&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:16.17&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -934,27 +934,27 @@ __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2022b_202203181029">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="4d068ef8-4ea0-442a-98c8-2a19dede6f0c">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="0049d0f3-a601-44bb-a6ef-6281bad5d977">
     <priorityDirection>HighNumberLast</priorityDirection>
     <editorState type="sltp.mm.core.EditorState" uuid="ce4fa95c-e23d-4b3e-ae6f-3bce6c36d463">
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="c143013c-b603-4453-88e5-30a735552888"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="e09f21eb-c22f-4b35-a09a-a05f7f152ed0">
-      <context type="sltp.mm.core.Context" uuid="4d068ef8-4ea0-442a-98c8-2a19dede6f0c"/>
+    <rootTask type="sltp.mm.core.Task" uuid="d87b2f3f-5a2a-4d10-92b3-3bb1bc136b47">
+      <context type="sltp.mm.core.Context" uuid="0049d0f3-a601-44bb-a6ef-6281bad5d977"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="db5d056f-f56e-4379-9f9a-9571ddfcbe1c">
-        <tasks type="sltp.mm.core.Task" uuid="757d6789-e2dc-48a1-af91-bc2b1fa10abc">
+      <subgraph type="sltp.mm.core.Graph" uuid="46d73b6e-94c1-48e3-a821-9f441aa8d7c8">
+        <tasks type="sltp.mm.core.Task" uuid="77783c76-c1e1-48b7-8cff-23b12fe5ff1c">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="4d068ef8-4ea0-442a-98c8-2a19dede6f0c"/>
+          <context type="sltp.mm.core.Context" uuid="0049d0f3-a601-44bb-a6ef-6281bad5d977"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>Cont</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="01e61206-4f51-4857-878f-db22126654f0">
+          <rates type="sltp.mm.core.Rate" uuid="91fdca5b-52bf-4307-89a7-55119a96a34f">
             <annotation>Cont</annotation>
             <color>255</color>
             <hasBlocks>true</hasBlocks>
@@ -964,7 +964,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>0</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="b098c17e-f496-4a65-8d69-248f6a6d37bc">
+          <rates type="sltp.mm.core.Rate" uuid="7863a0d9-2ad0-4164-bd08-719b15bfc1b4">
             <annotation>FiM</annotation>
             <color>-2139062017</color>
             <hasBlocks>true</hasBlocks>
@@ -1234,8 +1234,8 @@ dpe = [dp0fr_d; dp0fl_d; dp0hr_d; dp0hl_d];
 N1 = eye(20) - Je_pinv*Je; 
 
 % Compute joint velocities (state vector time-derivative)
-dq = Je_pinv*dpe + N1*Jb&apos;*vb; 
-% dq = Je_pinv*dpe;
+% dq = Je_pinv*dpe + N1*Jb&apos;*vb; 
+dq = Je_pinv*dpe + pinv(Jb*N1)*(vb - Jb*Je_pinv*dpe);
 
 end</P>
       </eml>

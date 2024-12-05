@@ -63,7 +63,7 @@ k=5;
 % Initialize video file
 motion_sim_video = VideoWriter('Figures/motionsim_animations/motionsim_anim');
 motion_sim_video.FrameRate = 1/(k*Step_Time);
-% motion_sim_video.Quality = 100;
+motion_sim_video.Quality = 100;
 open(motion_sim_video)
 
 for u=1:k:length(t)
@@ -71,8 +71,9 @@ for u=1:k:length(t)
     i=u;
     j=j+1;
     
+%     figure(Position=[1000 500 1000 800])
+
     %% Links
-    
     plot3([r_shd_fr(i,1) r_shd_fl(i,1) r_shd_hl(i,1) r_shd_hr(i,1) r_shd_fr(i,1)],[r_shd_fr(i,2) r_shd_fl(i,2) r_shd_hl(i,2) r_shd_hr(i,2) r_shd_fr(i,2)],[r_shd_fr(i,3) r_shd_fl(i,3) r_shd_hl(i,3) r_shd_hr(i,3) r_shd_fr(i,3)],'k','LineWidth',2);
     hold on
     plot3([r_shd_fr(i,1) r_hip_fr(i,1)],[r_shd_fr(i,2) r_hip_fr(i,2)],[r_shd_fr(i,3) r_hip_fr(i,3)],'m','LineWidth',2);
@@ -135,7 +136,8 @@ for u=1:k:length(t)
     axis equal
     axis off
     grid off
-    figure(gcf)
+    f = figure(gcf);
+    f.Position = [500 500 1280 720];
     drawnow
     hold off
     %% Save Frames

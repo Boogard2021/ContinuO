@@ -4834,7 +4834,8 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
+    set(gcf,'Position',[1000 500 1280 720]);
     
     subplot(2,2,2)
     Pfr=plot(t,q.fr(:,2),'b','LineWidth',2);
@@ -4858,7 +4859,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
 
     subplot(2,2,3)
     Pfr=plot(t,q.fr(:,3),'b','LineWidth',2);
@@ -4882,7 +4883,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
 
     subplot(2,2,4)
     Phr=plot(t,q.hr(:,4),'--c','LineWidth',2);
@@ -4902,7 +4903,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
     saveas(gcf,'Figures/Joint Angle/Position_multistride')
 
     % One stride cycle
@@ -4929,7 +4930,9 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
+    set(gcf,'Position',[1000 500 1280 720]);
+
     
     subplot(2,2,2)
     Pfr=plot(t,q.fr(:,2),'b','LineWidth',2);
@@ -4953,7 +4956,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
 
     subplot(2,2,3)
     Pfr=plot(t,q.fr(:,3),'b','LineWidth',2);
@@ -4977,7 +4980,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
 
     subplot(2,2,4)
     Phr=plot(t,q.hr(:,4),'--c','LineWidth',2);
@@ -4997,7 +5000,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
     saveas(gcf,'Figures/Joint Angle/Position_onestride')
 
     %% Angular velocity
@@ -5024,8 +5027,10 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
+    set(gcf,'Position',[1000 500 1280 720]);
     % saveas(gcf,'Figures\Joint Angle\Velocity\1.png')
+    
     
     % figure
     subplot(2,2,2)
@@ -5049,7 +5054,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
     % saveas(gcf,'Figures\Joint Angle\Velocity\2.png')
     
     % figure
@@ -5074,7 +5079,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
     % saveas(gcf,'Figures\Joint Angle\Velocity\3.png')
 
     subplot(2,2,4)
@@ -5095,7 +5100,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
     saveas(gcf,'Figures/Joint Angle/Velocity_multistride')
 
     % One stride
@@ -5121,7 +5126,8 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
+    set(gcf,'Position',[1000 500 1280 720]);
     % saveas(gcf,'Figures\Joint Angle\Velocity\1.png')
     
     % figure
@@ -5146,7 +5152,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
     % saveas(gcf,'Figures\Joint Angle\Velocity\2.png')
     
     % figure
@@ -5171,7 +5177,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
     % saveas(gcf,'Figures\Joint Angle\Velocity\3.png')
 
     subplot(2,2,4)
@@ -5192,7 +5198,7 @@ elseif m==17
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
-    set(gcf,'unit','normalized','position',[0,0,1,1]);
+%     set(gcf,'unit','normalized','position',[0,0,1,1]);
     saveas(gcf,'Figures/Joint Angle/Velocity_onestride')
     
     %% Trajectory Error
@@ -5210,4 +5216,5 @@ elseif m==17
     set(errorplot,{'LineStyle','Color'}, {'-','g'; '--','g'; '-.','g'; '-','b'; '--','b'; '-.','b'; '-','r'; '--','r'; '-.','r'; '-','c'; '--','c'; '-.','c'; '-','m'; '--','m'; '-.','m'});
     hold off
     saveas(gcf,'Figures/Joint Angle/errorplot')
+    set(gcf,'Position',[1000 500 1280 720]);
 end

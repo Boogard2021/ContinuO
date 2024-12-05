@@ -4809,7 +4809,103 @@ elseif m==17
     
     w_max=max(abs(dq.fr(3:end-3,:)));
     
-    %%
+    %% Joint Angle Plots
+    % Full motion_time
+    figure
+    subplot(2,2,1)
+    Pfr=plot(t,q.fr(:,1),'b','LineWidth',2);
+    hold on
+    Pfl=plot(t,q.fl(:,1),'r','LineWidth',2);
+    Phr=plot(t,q.hr(:,1),'--c','LineWidth',2);
+    Phl=plot(t,q.hl(:,1),'--m','LineWidth',2);
+    hold off
+    xlabel('time (sec)')
+    ylabel('q_1 (rad)')
+    % title({'Joint 1 (Shoulder) Angle';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 1 (Shoulder) Angle')
+    % xlim([0 2*Tc])
+    xlim([0 Motion_Time])
+    set(Pfr,'DisplayName','FR');
+    set(Pfl,'DisplayName','FL');
+    set(Phr,'DisplayName','HR');
+    set(Phl,'DisplayName','HL');
+    set(gca,'FontSize',16);
+    set(get(gca,'XLabel'),'FontSize',18);
+    set(get(gca,'YLabel'),'FontSize',18);
+    set(get(gca,'title'),'FontSize',16);
+    legend(gca,'show','Orientation','horizontal');
+    set(gcf,'unit','normalized','position',[0,0,1,1]);
+    
+    subplot(2,2,2)
+    Pfr=plot(t,q.fr(:,2),'b','LineWidth',2);
+    hold on
+    Pfl=plot(t,q.fl(:,2),'r','LineWidth',2);
+    Phr=plot(t,q.hr(:,2),'--c','LineWidth',2);
+    Phl=plot(t,q.hl(:,2),'--m','LineWidth',2);
+    hold off
+    xlabel('time (sec)')
+    ylabel('q_2 (rad)')
+    % title({'Joint 2 (Hip) Angle';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 2 (Hip) Angle')
+    % xlim([0 2*Tc])
+    xlim([0 Motion_Time])
+    set(Pfr,'DisplayName','FR');
+    set(Pfl,'DisplayName','FL');
+    set(Phr,'DisplayName','HR');
+    set(Phl,'DisplayName','HL');
+    set(gca,'FontSize',16);
+    set(get(gca,'XLabel'),'FontSize',18);
+    set(get(gca,'YLabel'),'FontSize',18);
+    set(get(gca,'title'),'FontSize',16);
+    % legend(gca,'show','Orientation','horizontal');
+    set(gcf,'unit','normalized','position',[0,0,1,1]);
+
+    subplot(2,2,3)
+    Pfr=plot(t,q.fr(:,3),'b','LineWidth',2);
+    hold on
+    Pfl=plot(t,q.fl(:,3),'r','LineWidth',2);
+    Phr=plot(t,q.hr(:,3),'--c','LineWidth',2);
+    Phl=plot(t,q.hl(:,3),'--m','LineWidth',2);
+    hold off
+    xlabel('time (sec)')
+    ylabel('q_3 (rad)')
+    % title({'Joint 3 (Knee) Angle';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 3 (Knee) Angle')
+    % xlim([0 2*Tc])
+    xlim([0 Motion_Time])
+    set(Pfr,'DisplayName','FR');
+    set(Pfl,'DisplayName','FL');
+    set(Phr,'DisplayName','HR');
+    set(Phl,'DisplayName','HL');
+    set(gca,'FontSize',16);
+    set(get(gca,'XLabel'),'FontSize',18);
+    set(get(gca,'YLabel'),'FontSize',18);
+    set(get(gca,'title'),'FontSize',16);
+    % legend(gca,'show','Orientation','horizontal');
+    set(gcf,'unit','normalized','position',[0,0,1,1]);
+
+    subplot(2,2,4)
+    Phr=plot(t,q.hr(:,4),'--c','LineWidth',2);
+    hold on
+    Phl=plot(t,q.hl(:,4),'--m','LineWidth',2);
+    hold off
+    xlabel('time (sec)')
+    ylabel('q_4 (rad)')
+    % title({'Joint 4 (Ankle) Angle';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 4 (Ankle) Angle')
+    % xlim([0 2*Tc])
+    xlim([0 Motion_Time])
+    set(Phr,'DisplayName','HR');
+    set(Phl,'DisplayName','HL');
+    set(gca,'FontSize',16);
+    set(get(gca,'XLabel'),'FontSize',18);
+    set(get(gca,'YLabel'),'FontSize',18);
+    set(get(gca,'title'),'FontSize',16);
+    % legend(gca,'show','Orientation','horizontal');
+    set(gcf,'unit','normalized','position',[0,0,1,1]);
+    saveas(gcf,'Figures/Joint Angle/Position_multistride')
+
+    % One stride cycle
     figure
     subplot(2,2,1)
     Pfr=plot(t,q.fr(:,1),'b','LineWidth',2);
@@ -4823,6 +4919,7 @@ elseif m==17
     % title({'Joint 1 (Shoulder) Angle';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
     title('Joint 1 (Shoulder) Angle')
     xlim([0 2*Tc])
+    % xlim([0 Motion_Time])
     set(Pfr,'DisplayName','FR');
     set(Pfl,'DisplayName','FL');
     set(Phr,'DisplayName','HR');
@@ -4846,6 +4943,7 @@ elseif m==17
     % title({'Joint 2 (Hip) Angle';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
     title('Joint 2 (Hip) Angle')
     xlim([0 2*Tc])
+    % xlim([0 Motion_Time])
     set(Pfr,'DisplayName','FR');
     set(Pfl,'DisplayName','FL');
     set(Phr,'DisplayName','HR');
@@ -4869,6 +4967,7 @@ elseif m==17
     % title({'Joint 3 (Knee) Angle';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
     title('Joint 3 (Knee) Angle')
     xlim([0 2*Tc])
+    % xlim([0 Motion_Time])
     set(Pfr,'DisplayName','FR');
     set(Pfl,'DisplayName','FL');
     set(Phr,'DisplayName','HR');
@@ -4881,15 +4980,16 @@ elseif m==17
     set(gcf,'unit','normalized','position',[0,0,1,1]);
 
     subplot(2,2,4)
-    Phr=plot(t,q.hr(:,3),'--c','LineWidth',2);
+    Phr=plot(t,q.hr(:,4),'--c','LineWidth',2);
     hold on
-    Phl=plot(t,q.hl(:,3),'--m','LineWidth',2);
+    Phl=plot(t,q.hl(:,4),'--m','LineWidth',2);
     hold off
     xlabel('time (sec)')
     ylabel('q_4 (rad)')
     % title({'Joint 4 (Ankle) Angle';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
     title('Joint 4 (Ankle) Angle')
     xlim([0 2*Tc])
+    % xlim([0 Motion_Time])
     set(Phr,'DisplayName','HR');
     set(Phl,'DisplayName','HL');
     set(gca,'FontSize',16);
@@ -4898,20 +4998,22 @@ elseif m==17
     set(get(gca,'title'),'FontSize',16);
     % legend(gca,'show','Orientation','horizontal');
     set(gcf,'unit','normalized','position',[0,0,1,1]);
-    saveas(gcf,'Figures\Joint Angle\Position.png')
+    saveas(gcf,'Figures/Joint Angle/Position_onestride')
 
     %% Angular velocity
+    % Multistride
     figure
-    subplot(3,1,[2 3])
+    subplot(2,2,1)
     Pfr=plot(t,dq.fr(:,1),'b','LineWidth',2);
     hold on
     Pfl=plot(t,dq.fl(:,1),'r','LineWidth',2);
-    Phr=plot(t,dq.hr(:,1),'--b','LineWidth',2);
-    Phl=plot(t,dq.hl(:,1),'--r','LineWidth',2);
+    Phr=plot(t,dq.hr(:,1),'--c','LineWidth',2);
+    Phl=plot(t,dq.hl(:,1),'--m','LineWidth',2);
     hold off
     xlabel('time (sec)')
     ylabel('$\dot{{q}_{1}}$ (rad/s)','interpreter','latex')
-    title({'Angular velocity of Shoulder Joint';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    % title({'Joint 1 (Shoulder) Angular Velocity';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 1 (Shoulder) Angular Velocity');    
     xlim([0 Motion_Time])
     set(Pfr,'DisplayName','FR');
     set(Pfl,'DisplayName','FL');
@@ -4923,21 +5025,20 @@ elseif m==17
     set(get(gca,'title'),'FontSize',16);
     legend(gca,'show','Orientation','horizontal');
     set(gcf,'unit','normalized','position',[0,0,1,1]);
-    saveas(gcf,'Figures\Joint Angle\Velocity\1.png')
+    % saveas(gcf,'Figures\Joint Angle\Velocity\1.png')
     
-    figure
-    subplot(3,1,[2 3])
+    % figure
+    subplot(2,2,2)
     Pfr=plot(t,dq.fr(:,2),'b','LineWidth',2);
     hold on
     Pfl=plot(t,dq.fl(:,2),'r','LineWidth',2);
-    Phr=plot(t,dq.hr(:,2),'--b','LineWidth',2);
-    Phl=plot(t,dq.hl(:,2),'--r','LineWidth',2);
-    Phr_mid=plot(t,dq.hr(:,3),'--g','LineWidth',2);
-    Phl_mid=plot(t,dq.hl(:,3),'--m','LineWidth',2);
+    Phr=plot(t,dq.hr(:,2),'--c','LineWidth',2);
+    Phl=plot(t,dq.hl(:,2),'--m','LineWidth',2);
     hold off
     xlabel('time (sec)')
     ylabel('$\dot{{q}_{2}}$ (rad/s)','interpreter','latex')
-    title({'Angular velocity of Hip Joint';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    % title({'Joint 2 (Hip) Angular Velocity';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 2 (Hip) Angular Velocity')
     xlim([0 Motion_Time])
     set(Pfr,'DisplayName','FR');
     set(Pfl,'DisplayName','FL');
@@ -4947,24 +5048,70 @@ elseif m==17
     set(get(gca,'XLabel'),'FontSize',18);
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
-    set(Phr_mid,'DisplayName','HindRightMid');
-    set(Phl_mid,'DisplayName','HindLeftMid');
-    legend(gca,'show','Orientation','horizontal');
+    % legend(gca,'show','Orientation','horizontal');
     set(gcf,'unit','normalized','position',[0,0,1,1]);
-    saveas(gcf,'Figures\Joint Angle\Velocity\2.png')
+    % saveas(gcf,'Figures\Joint Angle\Velocity\2.png')
     
-    figure
-    subplot(3,1,[2 3])
+    % figure
+    subplot(2,2,3)
     Pfr=plot(t,dq.fr(:,3),'b','LineWidth',2);
     hold on
     Pfl=plot(t,dq.fl(:,3),'r','LineWidth',2);
-    Phr=plot(t,dq.hr(:,4),'--b','LineWidth',2);
-    Phl=plot(t,dq.hl(:,4),'--r','LineWidth',2);
+    Phr=plot(t,dq.hr(:,3),'--c','LineWidth',2);
+    Phl=plot(t,dq.hl(:,3),'--m','LineWidth',2);
     hold off
     xlabel('time (sec)')
     ylabel('$\dot{{q}_{3}}$ (rad/s)','interpreter','latex')
-    title({'Angular velocity of Knee Joint';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    % title({'Joint 3 (Knee) Angular Velocity';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 3 (Knee) Angular Velocity')
     xlim([0 Motion_Time])
+    set(Pfr,'DisplayName','FR');
+    set(Pfl,'DisplayName','FL');
+    set(Phr,'DisplayName','HR');
+    set(Phl,'DisplayName','HL');
+    set(gca,'FontSize',16);
+    set(get(gca,'XLabel'),'FontSize',18);
+    set(get(gca,'YLabel'),'FontSize',18);
+    set(get(gca,'title'),'FontSize',16);
+    % legend(gca,'show','Orientation','horizontal');
+    set(gcf,'unit','normalized','position',[0,0,1,1]);
+    % saveas(gcf,'Figures\Joint Angle\Velocity\3.png')
+
+    subplot(2,2,4)
+    Phr=plot(t,dq.hr(:,4),'--c','LineWidth',2);
+    hold on
+    Phl=plot(t,dq.hl(:,4),'--m','LineWidth',2);
+    hold off
+    xlabel('time (sec)')
+    ylabel('$\dot{{q}_{4}}$ (rad/s)','interpreter','latex')
+    % title({'Joint 4 (Ankle) Angle';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 4 (Ankle) Angular Velocity')
+    % xlim([0 2*Tc])
+    xlim([0 Motion_Time])
+    set(Phr,'DisplayName','HR');
+    set(Phl,'DisplayName','HL');
+    set(gca,'FontSize',16);
+    set(get(gca,'XLabel'),'FontSize',18);
+    set(get(gca,'YLabel'),'FontSize',18);
+    set(get(gca,'title'),'FontSize',16);
+    % legend(gca,'show','Orientation','horizontal');
+    set(gcf,'unit','normalized','position',[0,0,1,1]);
+    saveas(gcf,'Figures/Joint Angle/Velocity_multistride')
+
+    % One stride
+    figure
+    subplot(2,2,1)
+    Pfr=plot(t,dq.fr(:,1),'b','LineWidth',2);
+    hold on
+    Pfl=plot(t,dq.fl(:,1),'r','LineWidth',2);
+    Phr=plot(t,dq.hr(:,1),'--c','LineWidth',2);
+    Phl=plot(t,dq.hl(:,1),'--m','LineWidth',2);
+    hold off
+    xlabel('time (sec)')
+    ylabel('$\dot{{q}_{1}}$ (rad/s)','interpreter','latex')
+    % title({'Joint 1 (Shoulder) Angular Velocity';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 1 (Shoulder) Angular Velocity');    
+    xlim([0 2*Tc])
     set(Pfr,'DisplayName','FR');
     set(Pfl,'DisplayName','FL');
     set(Phr,'DisplayName','HR');
@@ -4975,13 +5122,84 @@ elseif m==17
     set(get(gca,'title'),'FontSize',16);
     legend(gca,'show','Orientation','horizontal');
     set(gcf,'unit','normalized','position',[0,0,1,1]);
-    saveas(gcf,'Figures\Joint Angle\Velocity\3.png')
+    % saveas(gcf,'Figures\Joint Angle\Velocity\1.png')
+    
+    % figure
+    subplot(2,2,2)
+    Pfr=plot(t,dq.fr(:,2),'b','LineWidth',2);
+    hold on
+    Pfl=plot(t,dq.fl(:,2),'r','LineWidth',2);
+    Phr=plot(t,dq.hr(:,2),'--c','LineWidth',2);
+    Phl=plot(t,dq.hl(:,2),'--m','LineWidth',2);
+    hold off
+    xlabel('time (sec)')
+    ylabel('$\dot{{q}_{2}}$ (rad/s)','interpreter','latex')
+    % title({'Joint 2 (Hip) Angular Velocity';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 2 (Hip) Angular Velocity')
+    xlim([0 2*Tc])
+    set(Pfr,'DisplayName','FR');
+    set(Pfl,'DisplayName','FL');
+    set(Phr,'DisplayName','HR');
+    set(Phl,'DisplayName','HL');
+    set(gca,'FontSize',16);
+    set(get(gca,'XLabel'),'FontSize',18);
+    set(get(gca,'YLabel'),'FontSize',18);
+    set(get(gca,'title'),'FontSize',16);
+    % legend(gca,'show','Orientation','horizontal');
+    set(gcf,'unit','normalized','position',[0,0,1,1]);
+    % saveas(gcf,'Figures\Joint Angle\Velocity\2.png')
+    
+    % figure
+    subplot(2,2,3)
+    Pfr=plot(t,dq.fr(:,3),'b','LineWidth',2);
+    hold on
+    Pfl=plot(t,dq.fl(:,3),'r','LineWidth',2);
+    Phr=plot(t,dq.hr(:,3),'--c','LineWidth',2);
+    Phl=plot(t,dq.hl(:,3),'--m','LineWidth',2);
+    hold off
+    xlabel('time (sec)')
+    ylabel('$\dot{{q}_{3}}$ (rad/s)','interpreter','latex')
+    % title({'Joint 3 (Knee) Angular Velocity';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 3 (Knee) Angular Velocity')
+    xlim([0 2*Tc])
+    set(Pfr,'DisplayName','FR');
+    set(Pfl,'DisplayName','FL');
+    set(Phr,'DisplayName','HR');
+    set(Phl,'DisplayName','HL');
+    set(gca,'FontSize',16);
+    set(get(gca,'XLabel'),'FontSize',18);
+    set(get(gca,'YLabel'),'FontSize',18);
+    set(get(gca,'title'),'FontSize',16);
+    % legend(gca,'show','Orientation','horizontal');
+    set(gcf,'unit','normalized','position',[0,0,1,1]);
+    % saveas(gcf,'Figures\Joint Angle\Velocity\3.png')
+
+    subplot(2,2,4)
+    Phr=plot(t,dq.hr(:,4),'--c','LineWidth',2);
+    hold on
+    Phl=plot(t,dq.hl(:,4),'--m','LineWidth',2);
+    hold off
+    xlabel('time (sec)')
+    ylabel('$\dot{{q}_{4}}$ (rad/s)','interpreter','latex')
+    % title({'Joint 4 (Ankle) Angle';['Flat: Ds = ',num2str(100*Ds), ' cm & V = ',num2str(V), ' km/h']})
+    title('Joint 4 (Ankle) Angular Velocity')
+    xlim([0 2*Tc])
+    % xlim([0 Motion_Time])
+    set(Phr,'DisplayName','HR');
+    set(Phl,'DisplayName','HL');
+    set(gca,'FontSize',16);
+    set(get(gca,'XLabel'),'FontSize',18);
+    set(get(gca,'YLabel'),'FontSize',18);
+    set(get(gca,'title'),'FontSize',16);
+    % legend(gca,'show','Orientation','horizontal');
+    set(gcf,'unit','normalized','position',[0,0,1,1]);
+    saveas(gcf,'Figures/Joint Angle/Velocity_onestride')
     
     %% Trajectory Error
     figure
-    errorplot = plot(t, e, 'LineWidth', 2);
+    errorplot = plot(t, e(:,[1:3 7:end]), 'LineWidth', 2);
     hold on
-    legend('x_b', 'y_b', 'z_b', 'theta', 'phi', 'psi', 'x_fr', 'y_fr', 'z_fr', 'x_fl', 'y_fl', 'z_fl', 'x_hr', 'y_hr', 'z_hr', 'x_hl', 'y_hl', 'z_hl');
+    legend('x_b', 'y_b', 'z_b', 'x_fr', 'y_fr', 'z_fr', 'x_fl', 'y_fl', 'z_fl', 'x_hr', 'y_hr', 'z_hr', 'x_hl', 'y_hl', 'z_hl');
     title('Trajectory error')
     xlabel('time (sec)')
     ylabel('desired - actual (m)')
@@ -4989,12 +5207,7 @@ elseif m==17
     set(get(gca,'XLabel'),'FontSize',18);
     set(get(gca,'YLabel'),'FontSize',18);
     set(get(gca,'title'),'FontSize',16);
-    % for i = 1:18
-    %     wvec(i) = 2;
-    % end
-    % errorplot.LineWidth = wvec;
-    % stylemono = {'-', '--', '-.'};
-    set(errorplot,{'LineStyle'}, {'-'; '--'; '-.'; '-'; '--'; '-.'; '-'; '--'; '-.'; '-'; '--'; '-.'; '-'; '--'; '-.'; '-'; '--'; '-.'});
+    set(errorplot,{'LineStyle','Color'}, {'-','g'; '--','g'; '-.','g'; '-','b'; '--','b'; '-.','b'; '-','r'; '--','r'; '-.','r'; '-','c'; '--','c'; '-.','c'; '-','m'; '--','m'; '-.','m'});
     hold off
-    saveas(gcf,'Figures\Joint Angle\errorplot.png')
+    saveas(gcf,'Figures/Joint Angle/errorplot')
 end

@@ -102,7 +102,7 @@ q3_fl = acos((L3_f^2+L2_f^2-h_1^2)/(2*L3_f*L2_f))-pi;
 
 %% Hind Right
 if redundant == 1 % Hind legs with redundancy
-    alpha = 10*pi/180;   % alpha = q2+q3+q4
+    alpha = 30*pi/180;   % alpha = q2+q3+q4
     L2_h = 201/1000;   % Vertical distance between Shoulder and Knee Joint (Hind leg)
     L3_h = 246.5/1000;  % Vertical distance between Knee and Ankle Joint (Hind leg)
     

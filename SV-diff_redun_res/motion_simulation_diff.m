@@ -4,7 +4,7 @@ global Ds Motion_Time Step_Time
 global W_b ceiling_h1_z ceiling_h2_z ceiling_h3_z ceiling_h1_x ceiling_h2_x ceiling_h3_x 
 global N
 
-sim('test_diff_IK_trajectories',Motion_Time)
+sim('test_diff_IK_trajectories_Jaugpose',Motion_Time)
 % sim('test_trajectories_num',Motion_Time)
 r=simout1.signals.values;
 t=simout1.time;

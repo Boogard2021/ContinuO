@@ -44,8 +44,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <cp:category>model</cp:category>
   <dcterms:created xsi:type="dcterms:W3CDTF">2024-12-05T20:46:47Z</dcterms:created>
   <cp:lastModifiedBy>stefa</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-12-06T19:22:49Z</dcterms:modified>
-  <cp:revision>16.26</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-12-06T22:21:55Z</dcterms:modified>
+  <cp:revision>16.27</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -121,7 +121,7 @@ q_i = [p_i(1:6); q_j];</P>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:16.26&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:16.27&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -927,34 +927,34 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="5a52c835-3c32-4e50-b5bf-5e5a18c4a5f8">
-    <Interface type="Interface" uuid="4dc2b9a4-10d2-4520-8011-c43a2d6ddc97"/>
+  <System type="System" uuid="5980d306-89fa-4492-8088-5c771215ae8b">
+    <Interface type="Interface" uuid="f70058b4-a8f3-4dd1-9297-2ea696e9067f"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2022b_202203181029">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="8467c612-6919-4916-822e-d5f59aab407b">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="2d97a166-b5cb-4cad-b0b8-4f1e40829c88">
     <priorityDirection>HighNumberLast</priorityDirection>
     <editorState type="sltp.mm.core.EditorState" uuid="ce4fa95c-e23d-4b3e-ae6f-3bce6c36d463">
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="c143013c-b603-4453-88e5-30a735552888"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="22f0c969-3c0c-421a-bc2e-da7aef59138b">
-      <context type="sltp.mm.core.Context" uuid="8467c612-6919-4916-822e-d5f59aab407b"/>
+    <rootTask type="sltp.mm.core.Task" uuid="803beca1-5fc2-4d4b-a021-4a86c5f1a691">
+      <context type="sltp.mm.core.Context" uuid="2d97a166-b5cb-4cad-b0b8-4f1e40829c88"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="7d4d8668-a290-44e5-8850-8ab05f50668e">
-        <tasks type="sltp.mm.core.Task" uuid="6521b9fc-d473-4490-ae3a-ffc551e4117f">
+      <subgraph type="sltp.mm.core.Graph" uuid="c9cb87b4-f1ce-4dc3-8ede-a9abb590c041">
+        <tasks type="sltp.mm.core.Task" uuid="0bdfbcea-2eae-4117-a0fc-541ed14b2240">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="8467c612-6919-4916-822e-d5f59aab407b"/>
+          <context type="sltp.mm.core.Context" uuid="2d97a166-b5cb-4cad-b0b8-4f1e40829c88"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>Cont</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="e67be59b-822d-4f9f-be80-f5fde2b3f556">
+          <rates type="sltp.mm.core.Rate" uuid="8226993d-f082-467d-bce9-719f0a9911af">
             <annotation>Cont</annotation>
             <color>255</color>
             <hasBlocks>true</hasBlocks>
@@ -964,7 +964,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>0</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="6208df89-2778-4412-be18-1ae4eff9a15b">
+          <rates type="sltp.mm.core.Rate" uuid="532666c9-4b21-4812-8f5e-e97f8f5caec5">
             <annotation>FiM</annotation>
             <color>-2139062017</color>
             <hasBlocks>true</hasBlocks>
@@ -1240,10 +1240,10 @@ vb = [dp0b_d; dqb_d];
 % Pose maintenance joint velocity
 % k_pose = 0.01; % Pose maintenance gain
 dq_pose = k_pose*(q_joint_d - q_prev(7:20)); % Joint angles only, proportional pose maintance
-dq_pose = [zeros(6,1); dq_pose]; % Adding body configuration variables as zeroes
+% dq_pose = [zeros(6,1); dq_pose]; % Adding body configuration variables as zeroes
 
 % Pose maintenance Jacobian
-J_pose = eye(20);
+J_pose = [zeros(14,6), eye(14)];
 
 % Foot + body task Jacobian
 Jeb = [Je; Jb];
@@ -2548,7 +2548,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
           <P Name="LoadSaveID" Class="char">73</P>
-          <P Name="Extents" Class="double">[958.0, 1156.0]</P>
+          <P Name="Extents" Class="double">[1680.0, 1156.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
           <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
@@ -2596,30 +2596,18 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       </Array>
       <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*4">
         <Object ObjectID="11">
-          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
-          <P Name="ID" Class="char">Property Inspector</P>
-          <P Name="Visible" Class="logical">0</P>
-          <P Name="CreateCallback" Class="char"/>
-          <P Name="UserData" Class="char"/>
-          <P Name="Floating" Class="logical">0</P>
-          <P Name="DockPosition" Class="char">Right</P>
-          <P Name="Width" Class="int32">640</P>
-          <P Name="Height" Class="int32">480</P>
-          <P Name="Minimized" Class="char">Unset</P>
-        </Object>
-        <Object ObjectID="12">
           <P Name="Type" Class="char">GLUE2:DDG Component</P>
           <P Name="ID" Class="char">SymbolManager</P>
           <P Name="Visible" Class="logical">0</P>
           <P Name="CreateCallback" Class="char">Stateflow.Interface.Panel.createSymbolManagerComponent</P>
-          <P Name="UserData" Class="char">0</P>
+          <P Name="UserData" Class="char">1</P>
           <P Name="Floating" Class="logical">0</P>
           <P Name="DockPosition" Class="char">Right</P>
           <P Name="Width" Class="int32">714</P>
           <P Name="Height" Class="int32">1189</P>
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
-        <Object ObjectID="13">
+        <Object ObjectID="12">
           <P Name="Type" Class="char">Simulink:Editor:ReferencedFiles</P>
           <P Name="ID" Class="char">Referenced Files</P>
           <P Name="Visible" Class="logical">0</P>
@@ -2632,7 +2620,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Height" Class="int32">480</P>
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
-        <Object ObjectID="14">
+        <Object ObjectID="13">
           <P Name="Type" Class="char">GLUE2:SpreadSheet</P>
           <P Name="ID" Class="char">ModelData</P>
           <P Name="Visible" Class="logical">0</P>
@@ -2640,6 +2628,18 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="UserData" Class="char"/>
           <P Name="Floating" Class="logical">0</P>
           <P Name="DockPosition" Class="char">Bottom</P>
+          <P Name="Width" Class="int32">640</P>
+          <P Name="Height" Class="int32">480</P>
+          <P Name="Minimized" Class="char">Unset</P>
+        </Object>
+        <Object ObjectID="14">
+          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
+          <P Name="ID" Class="char">Property Inspector</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char"/>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Right</P>
           <P Name="Width" Class="int32">640</P>
           <P Name="Height" Class="int32">480</P>
           <P Name="Minimized" Class="char">Unset</P>

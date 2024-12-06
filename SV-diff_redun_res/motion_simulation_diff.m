@@ -1,12 +1,25 @@
 function motion_simulation_diff
+% Runs the differential motion simulation model, and animates the output.
+% 
+% Syntax: run motion_simulation_diff
+% 
+% Inputs: 
+%   None
+% 
+% Outputs:
+%   None
+% 
+% Originally by Hossein Heshavarz
+% Modified by Stefan Van de Mosselaer 
+% 13-Dec-2024
+
 %% Input
-global Ds Motion_Time Step_Time
+global Ds Motion_Time Step_Time Tc
 global W_b ceiling_h1_z ceiling_h2_z ceiling_h3_z ceiling_h1_x ceiling_h2_x ceiling_h3_x 
 global N
 
-sim('test_diff_IK_trajectories_Jaugpose',Motion_Time)
-% sim('test_trajectories_num',Motion_Time)
-r=simout1.signals.values;
+sim('test_diff_IK_trajectories_Jaugfeetandbody', Motion_Time)
+r=simout1.signals.values; % Position trajectories
 t=simout1.time;
 
 r = squeeze(r);
@@ -32,7 +45,7 @@ r_ankle_fl = r(:,49:51);
 r_ankle_hr = r(:,52:54);
 r_ankle_hl = r(:,55:57);
 
-% Desired trajectory
+% Desired trajectory:
 d = simout_d.signals.values;
 
 p0b_d = d(:,1:3);
@@ -42,7 +55,7 @@ p0fl_d = d(:,10:12);
 p0hr_d = d(:,13:15);
 p0hl_d = d(:,16:18);
 
-%% prespective view
+%% perspective view
 % az = 45;
 % el = 25;
 %% front view
@@ -71,8 +84,6 @@ for u=1:k:length(t)
     i=u;
     j=j+1;
     
-%     figure(Position=[1000 500 1000 800])
-
     %% Links
     plot3([r_shd_fr(i,1) r_shd_fl(i,1) r_shd_hl(i,1) r_shd_hr(i,1) r_shd_fr(i,1)],[r_shd_fr(i,2) r_shd_fl(i,2) r_shd_hl(i,2) r_shd_hr(i,2) r_shd_fr(i,2)],[r_shd_fr(i,3) r_shd_fl(i,3) r_shd_hl(i,3) r_shd_hr(i,3) r_shd_fr(i,3)],'k','LineWidth',2);
     hold on
@@ -95,26 +106,6 @@ for u=1:k:length(t)
 
     ceiling_h_x = ceiling_h1_x+ceiling_h2_x+ceiling_h3_x; %+2*N*Ds*[0 1 1 0 0]
     plot3(-5*Ds+[0 ceiling_h_x ceiling_h_x 0 0],1.5*[-W_b -W_b W_b W_b -W_b],-0.005*[1 1 1 1 1],'k','LineWidth',2)
-%     plot3(-4*Ds+[ceiling_h1_x ceiling_h1_x ceiling_h1_x ceiling_h1_x 0],3*[-W_b -W_b W_b W_b -W_b],[ceiling_h1_z ceiling_h1_z ceiling_h1_z ceiling_h1_z ceiling_h1_z],'k','LineWidth',2) %+2*N*Ds*[0 1 1 0 0]
-%     plot3(-4*Ds+ceiling_h1_x+[0 0 0 0 0],3*[-W_b -W_b W_b W_b -W_b],[ceiling_h1_z ceiling_h2_z ceiling_h2_z ceiling_h1_z ceiling_h1_z],'k','LineWidth',2) %+2*N*Ds*[0 1 1 0 0]
-%     plot3(-4*Ds+ceiling_h1_x+[0 +ceiling_h2_x +ceiling_h2_x 0 0],3*[-W_b -W_b W_b W_b -W_b],[ceiling_h2_z ceiling_h2_z ceiling_h2_z ceiling_h2_z ceiling_h2_z],'k','LineWidth',2)
-%     plot3(-4*Ds+ceiling_h1_x+ceiling_h2_x+[0 0 0 0 0],3*[-W_b -W_b W_b W_b -W_b],[ceiling_h2_z ceiling_h3_z ceiling_h3_z ceiling_h2_z ceiling_h2_z],'k','LineWidth',2)
-%     plot3(-4*Ds+ceiling_h1_x+ceiling_h2_x+[0 ceiling_h3_x ceiling_h3_x 0 0],3*[-W_b -W_b W_b W_b -W_b],[ceiling_h3_z ceiling_h3_z ceiling_h3_z ceiling_h3_z ceiling_h3_z],'k','LineWidth',2)
-    %% Center of Mass
-    %     plot3(r_foot_r(i,1),r_foot_r(i,2),r_foot_r(i,3),'ok','LineWidth',1)
-    %     plot3(r_unia_r(i,1),r_unia_r(i,2),r_unia_r(i,3),'ok','LineWidth',1)
-    %     plot3(r_sh_r(i,1),r_sh_r(i,2),r_sh_r(i,3),'ok','LineWidth',1)
-    %     plot3(r_th_r(i,1),r_th_r(i,2),r_th_r(i,3),'ok','LineWidth',1)
-    %     plot3(r_unih_r(i,1),r_unih_r(i,2),r_unih_r(i,3),'ok','LineWidth',1)
-    %     plot3(r_hip_r(i,1),r_hip_r(i,2),r_hip_r(i,3),'ok','LineWidth',1)
-    %
-    %     plot3(r_foot_l(i,1),r_foot_l(i,2),r_foot_l(i,3),'ok','LineWidth',1)
-    %     plot3(r_unia_l(i,1),r_unia_l(i,2),r_unia_l(i,3),'ok','LineWidth',1)
-    %     plot3(r_sh_l(i,1),r_sh_l(i,2),r_sh_l(i,3),'ok','LineWidth',1)
-    %     plot3(r_th_l(i,1),r_th_l(i,2),r_th_l(i,3),'ok','LineWidth',1)
-    %     plot3(r_unih_l(i,1),r_unih_l(i,2),r_unih_l(i,3),'ok','LineWidth',1)
-    %     plot3(r_hip_l(i,1),r_hip_l(i,2),r_hip_l(i,3),'ok','LineWidth',1)
-    %     plot3(r_tr(i,1),r_tr(i,2),r_tr(i,3),'ok','LineWidth',1)
 
     %% Trajectory tracking
     % Body frame position
@@ -154,4 +145,58 @@ end
 hold off
 
 close(motion_sim_video)
+
+% %% Snapshot figure:
+% snapfig = figure;
+% numsnaps = int16(3);
+% for snap = 0:numsnaps
+%     if snap == 0
+%         i = 1;
+%     else
+%         i = snap*idivide(Tc/Step_Time,numsnaps);
+%     end
+%     plot3([r_shd_fr(i,1) r_shd_fl(i,1) r_shd_hl(i,1) r_shd_hr(i,1) r_shd_fr(i,1)],[r_shd_fr(i,2) r_shd_fl(i,2) r_shd_hl(i,2) r_shd_hr(i,2) r_shd_fr(i,2)],[r_shd_fr(i,3) r_shd_fl(i,3) r_shd_hl(i,3) r_shd_hr(i,3) r_shd_fr(i,3)],'k','LineWidth',2);
+%     hold on
+%     plot3([r_shd_fr(i,1) r_hip_fr(i,1)],[r_shd_fr(i,2) r_hip_fr(i,2)],[r_shd_fr(i,3) r_hip_fr(i,3)],'m','LineWidth',2);
+%     plot3([r_shd_hr(i,1) r_hip_hr(i,1)],[r_shd_hr(i,2) r_hip_hr(i,2)],[r_shd_hr(i,3) r_hip_hr(i,3)],'m','LineWidth',2);
+%     plot3([r_shd_hl(i,1) r_hip_hl(i,1)],[r_shd_hl(i,2) r_hip_hl(i,2)],[r_shd_hl(i,3) r_hip_hl(i,3)],'m','LineWidth',2);
+%     plot3([r_shd_fl(i,1) r_hip_fl(i,1)],[r_shd_fl(i,2) r_hip_fl(i,2)],[r_shd_fl(i,3) r_hip_fl(i,3)],'m','LineWidth',2);
+%     
+%     plot3([r_hip_fr(i,1) r_knee_fr(i,1)],[r_hip_fr(i,2) r_knee_fr(i,2)],[r_hip_fr(i,3) r_knee_fr(i,3)],'b','LineWidth',2);
+%     plot3([r_hip_hr(i,1) r_knee_mid_hr(i,1)],[r_hip_hr(i,2) r_knee_mid_hr(i,2)],[r_hip_hr(i,3) r_knee_mid_hr(i,3)],'b','LineWidth',2);
+%     plot3([r_hip_hl(i,1) r_knee_mid_hl(i,1)],[r_hip_hl(i,2) r_knee_mid_hl(i,2)],[r_hip_hl(i,3) r_knee_mid_hl(i,3)],'b','LineWidth',2);
+%     plot3([r_hip_fl(i,1) r_knee_fl(i,1)],[r_hip_fl(i,2) r_knee_fl(i,2)],[r_hip_fl(i,3) r_knee_fl(i,3)],'b','LineWidth',2);
+%         
+%     plot3([r_knee_fr(i,1) r_ankle_fr(i,1)],[r_knee_fr(i,2) r_ankle_fr(i,2)],[r_knee_fr(i,3) r_ankle_fr(i,3)],'r','LineWidth',2);
+%     plot3([r_knee_hr(i,1) r_ankle_hr(i,1)],[r_knee_hr(i,2) r_ankle_hr(i,2)],[r_knee_hr(i,3) r_ankle_hr(i,3)],'r','LineWidth',2);
+%     plot3([r_knee_hl(i,1) r_ankle_hl(i,1)],[r_knee_hl(i,2) r_ankle_hl(i,2)],[r_knee_hl(i,3) r_ankle_hl(i,3)],'r','LineWidth',2);
+%     plot3([r_knee_fl(i,1) r_ankle_fl(i,1)],[r_knee_fl(i,2) r_ankle_fl(i,2)],[r_knee_fl(i,3) r_ankle_fl(i,3)],'r','LineWidth',2);
+%     plot3([r_knee_mid_hr(i,1) r_knee_hr(i,1)],[r_knee_mid_hr(i,2) r_knee_hr(i,2)],[r_knee_mid_hr(i,3) r_knee_hr(i,3)],'b','LineWidth',2);
+%     plot3([r_knee_mid_hl(i,1) r_knee_hl(i,1)],[r_knee_mid_hl(i,2) r_knee_hl(i,2)],[r_knee_mid_hl(i,3) r_knee_hl(i,3)],'b','LineWidth',2);
+% 
+%     ceiling_h_x = ceiling_h1_x+ceiling_h2_x+ceiling_h3_x; %+2*N*Ds*[0 1 1 0 0]
+%     plot3(-5*Ds+[0 ceiling_h_x ceiling_h_x 0 0],1.5*[-W_b -W_b W_b W_b -W_b],-0.005*[1 1 1 1 1],'k','LineWidth',2)
+% 
+%     %% Trajectory tracking
+%     % Body frame position
+%     plot3(p0b_d(1:i,1), p0b_d(1:i,2), p0b_d(1:i,3), '--g')
+%     % FR foot position
+%     plot3(p0fr_d(1:i,1), p0fr_d(1:i,2), p0fr_d(1:i,3), '--r')
+%     % FL foot position
+%     plot3(p0fl_d(1:i,1), p0fl_d(1:i,2), p0fl_d(1:i,3), '--b')
+%     % HR foot position
+%     plot3(p0hr_d(1:i,1), p0hr_d(1:i,2), p0hr_d(1:i,3), '--c')
+%     % HL foot position
+%     plot3(p0hl_d(1:i,1), p0hl_d(1:i,2), p0hl_d(1:i,3), '--m')
+% end
+%     %% Settings
+%     view(az, el);
+% %     view(90, 0);
+%     axis(0.3*[-2 5 -1.8 1.8 -0.5 2])
+%     axis equal
+%     axis off
+%     grid off
+%     snapfig.Position = [500 500 1280 720];
+%     hold off
+
 end

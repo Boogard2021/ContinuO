@@ -43,14 +43,14 @@ p0hr_d = d(:,13:15);
 p0hl_d = d(:,16:18);
 
 %% prespective view
-az = 45;
-el = 25;
+% az = 45;
+% el = 25;
 %% front view
 % az = 90;  
 % el = 0;
 %% side view
-% az = 0;  
-% el = 0;
+az = 0;  
+el = 0;
 %% 3D PLOT
 % N=floor(t(end-1)-T_ac-T_dc-Td/(2*Tc));
 j=1;

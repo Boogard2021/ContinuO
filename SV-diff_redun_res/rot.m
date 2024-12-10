@@ -1,4 +1,5 @@
 function [ Rd ] = rot( axis, q, dim)
+
 if axis==1
     R=[1 0 0 0;0 cos(q) -sin(q) 0;0 sin(q) cos(q) 0;0 0 0 1];
 elseif axis==2

@@ -19,8 +19,8 @@ __MWOPC_PART_BEGIN__ /[Content_Types].xml
   <Override ContentType="application/vnd.mathworks.simulink.mf0+xml" PartName="/simulink/modelDictionary.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.ScheduleCore+xml" PartName="/simulink/ScheduleCore.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.ScheduleEditor+xml" PartName="/simulink/ScheduleEditor.xml"/>
-  <Override ContentType="application/vnd.mathworks.stateflow.chart+xml" PartName="/simulink/stateflow/chart_61.xml"/>
-  <Override ContentType="application/vnd.mathworks.stateflow.chart+xml" PartName="/simulink/stateflow/chart_77.xml"/>
+  <Override ContentType="application/vnd.mathworks.stateflow.chart+xml" PartName="/simulink/stateflow/chart_62.xml"/>
+  <Override ContentType="application/vnd.mathworks.stateflow.chart+xml" PartName="/simulink/stateflow/chart_79.xml"/>
   <Override ContentType="application/vnd.mathworks.stateflow.machine+xml" PartName="/simulink/stateflow/machine.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.blockDiagram+xml" PartName="/simulink/windowsInfo.xml"/>
 </Types>
@@ -44,8 +44,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <cp:category>model</cp:category>
   <dcterms:created xsi:type="dcterms:W3CDTF">2024-12-05T20:46:47Z</dcterms:created>
   <cp:lastModifiedBy>stefa</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-12-12T18:38:07Z</dcterms:modified>
-  <cp:revision>16.27</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2024-12-06T18:48:43Z</dcterms:modified>
+  <cp:revision>16.26</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -121,7 +121,7 @@ q_i = [p_i(1:6); q_j];</P>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:16.27&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:16.26&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -890,7 +890,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
     </Array>
     <P Name="Name">Configuration</P>
     <P Name="CurrentDlgPage">Simulation Target</P>
-    <P Name="ConfigPrmDlgPosition">[ 0, 0, 0, 0 ]</P>
+    <P Name="ConfigPrmDlgPosition">[ 71, 71, 900, 710 ]</P>
     <P Name="ExtraOptions"/>
   </Object>
 </ConfigSet>
@@ -927,34 +927,34 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="873d6848-e6b3-4de8-a94b-4ddb5d96fbd3">
-    <Interface type="Interface" uuid="5de43610-07b3-40f4-a7db-5c2f3a11b256"/>
+  <System type="System" uuid="ec2acbf3-0da7-4d81-b186-6d82d1ec3b18">
+    <Interface type="Interface" uuid="e88c02e6-9979-4da7-b4ee-58cd5ed021c4"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2022b_202203181029">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="1e28d5f2-7264-4ae5-85f6-b0dd9bc388b5">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="d83de34a-ef9d-4d6c-a7c6-3b23b7d4bc8c">
     <priorityDirection>HighNumberLast</priorityDirection>
     <editorState type="sltp.mm.core.EditorState" uuid="ce4fa95c-e23d-4b3e-ae6f-3bce6c36d463">
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="c143013c-b603-4453-88e5-30a735552888"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="8f626629-79e3-4c42-8c49-1f99e2e8b7a7">
-      <context type="sltp.mm.core.Context" uuid="1e28d5f2-7264-4ae5-85f6-b0dd9bc388b5"/>
+    <rootTask type="sltp.mm.core.Task" uuid="b5bffc3b-5ff1-4923-ba78-7e0d92beecb1">
+      <context type="sltp.mm.core.Context" uuid="d83de34a-ef9d-4d6c-a7c6-3b23b7d4bc8c"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="8992f0b6-eeb1-4abc-8ce0-ed71846173e8">
-        <tasks type="sltp.mm.core.Task" uuid="43b8112f-1096-408f-9954-99a27cd2fa69">
+      <subgraph type="sltp.mm.core.Graph" uuid="eecb4fc6-025f-42a0-808a-8e8a9de73664">
+        <tasks type="sltp.mm.core.Task" uuid="42980a60-0b8b-4cef-8b31-3b1cc7a0b8a3">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="1e28d5f2-7264-4ae5-85f6-b0dd9bc388b5"/>
+          <context type="sltp.mm.core.Context" uuid="d83de34a-ef9d-4d6c-a7c6-3b23b7d4bc8c"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>Cont</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="f12d7260-59fa-4cd9-b380-654419f78ef3">
+          <rates type="sltp.mm.core.Rate" uuid="c2b7ce52-020a-46f5-a2ae-0a7e1d5855f6">
             <annotation>Cont</annotation>
             <color>255</color>
             <hasBlocks>true</hasBlocks>
@@ -964,7 +964,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>0</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="33d210ec-9c78-468f-872d-ad1d99cc0a43">
+          <rates type="sltp.mm.core.Rate" uuid="8722e43b-df8c-467f-bc34-3714bf3ef732">
             <annotation>FiM</annotation>
             <color>-2139062017</color>
             <hasBlocks>true</hasBlocks>
@@ -1032,21 +1032,21 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
 __MWOPC_PART_BEGIN__ /simulink/stateflow/_rels/machine.xml.rels
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
-  <Relationship Id="chart_61" Target="chart_61.xml" Type="http://schemas.mathworks.com/simulinkModel/2018/relationships/stateflowMachine"/>
-  <Relationship Id="chart_77" Target="chart_77.xml" Type="http://schemas.mathworks.com/simulinkModel/2018/relationships/stateflowMachine"/>
+  <Relationship Id="chart_62" Target="chart_62.xml" Type="http://schemas.mathworks.com/simulinkModel/2018/relationships/stateflowMachine"/>
+  <Relationship Id="chart_79" Target="chart_79.xml" Type="http://schemas.mathworks.com/simulinkModel/2018/relationships/stateflowMachine"/>
 </Relationships>
 
-__MWOPC_PART_BEGIN__ /simulink/stateflow/chart_61.xml
+__MWOPC_PART_BEGIN__ /simulink/stateflow/chart_62.xml
 <?xml version="1.0" encoding="utf-8"?>
-<chart id="61">
+<chart id="62">
   <P Name="name">MATLAB Function1</P>
   <P Name="windowPosition">[422 539.941 189 413]</P>
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
-  <P Name="viewObj">61</P>
+  <P Name="viewObj">62</P>
   <P Name="visible">1</P>
   <subviewS/>
-  <P Name="ssIdHighWaterMark">59</P>
+  <P Name="ssIdHighWaterMark">60</P>
   <P Name="decomposition">CLUSTER_CHART</P>
   <P Name="type">EML_CHART</P>
   <P Name="chartFileNumber">1</P>
@@ -1060,71 +1060,100 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_61.xml
       <P Name="position">[18 64.5 118 66]</P>
       <P Name="fontSize">12</P>
       <P Name="superState">SUBCHART</P>
-      <P Name="subviewer">61</P>
+      <P Name="subviewer">62</P>
       <P Name="type">FUNC_STATE</P>
       <P Name="decomposition">CLUSTER_STATE</P>
       <eml>
         <P Name="isEML">1</P>
-        <P Name="script">function dq = IK_diff(d, q_prev, L_h, L_b, W_b, L_sh_f, L_sh_h, L_th_f, L_th_h, L_th_h_mid)
+        <P Name="script">function dq = IK_diff(d, q_joint_d, q_prev, L_h, L_b, W_b, L_sh_f, L_sh_h, L_th_f, L_th_h, L_th_h_mid)
 % Computes ContinuO&apos;s inverse kinematics using a differential
 %   formulation from the desired velocities of its feet and body and their 
-%   joint angles in the previous timestep.
+%   positions.
 % 
-% Syntax: dq = IK_diff(d, q_prev, L_h, L_b, W_b, L_sh_f, L_sh_h, L_th_f, L_th_h, L_th_h_mid)
+% Syntax: q = IK_diff(d, p)
 % 
 % Inputs: 
-%   d - desired trajectory vector: 
-%       d = [p0b(1:3); q_b(1:3); p0fr(1:3); p0fl(1:3); p0hr(1:3); p0hl(1:3); ...
-%           dp0b(1:3); dq_b(1:3); dp0fr(1:3); dp0fl(1:3); dp0hr(1:3); dp0hl(1:3); ...
-%           ddp0b(1:3); ddq_b(1:3); ddp0fr(1:3); ddp0fl(1:3); ddp0hr(1:3); ddp0hl(1:3)]
-%   q_prev - previous timestep state (joint angles):
-%       q_prev = [p0b(1:3); theta_b; phi_b; psi_b; ...
-%                 q_fr(1:3); q_fl(1:3); q_hr(1:4); q_hl(1:4)]
-%   L_h, L_b, W_b, L_sh_f, L_sh_h, L_th_f, L_th_h, L_th_h_mid - robot
-%   dimension parameters.
+%   d - trajectory vector: 
+%       d = [r_p; q_p; r_fr; r_fl; r_hr; r_hl; 
+%           dr_p; dq_p; dr_fr; dr_fl; dr_hr; dr_hl;      
+%           ddr_p; ddq_p; ddr_fr; ddr_fl; ddr_hr; ddr_hl]
+%   p - world frame position vector:
+%       p = [p0b; qb; p0fr; p0fl; p0hr; p0hl]
 % 
 % Outputs:
 %   dq - joint velocity vector (state vector time-derivative): 
-%       dq = [dp0b(1:3); dtheta_b; dphi_b; dpsi_b; ...
-%             dq_fr(1:3); dq_fl(1:3); dq_hr(1:4); dq_hl(1:4)]
+%       dq = [dr_p; dq_p; dq_fr; dq_fl; dq_hr; dq_hl]
 % 
-% By Stefan Van de Mosselaer.
+% By Stefan Van de Mosselaer, modified from code by Hossein Keshavarz and
+%   Stefan Van de Mosselaer.
 % 
 % 13-Dec-2024
+% 
+% TODO: fix docutext
+
+% %% Global
+% % From quad_properties.m:
+% global L_h L_b W_b % Base (Body) dimensions
+% 
+% % From quad_parameters.m, limb x, y, and z dimensions:
+% global L_sh_f_x L_sh_h_x L_th_f_x L_th_h_x L_th_h_mid_x L_h_x 
+% global L_sh_f_y L_sh_h_y L_th_f_y L_th_h_y L_th_h_mid_y L_h_y 
+% global L_sh_f_z L_sh_h_z L_th_f_z L_th_h_z L_th_h_mid_z L_h_z
 
 %% Variable Definition
+% Actual Base and Foot Positions
+% p0b = p(1:3); % Base position (world frame)
+% x_b = p0b(1);
+% y_b = p0b(2);
+% z_b = p0b(3);
+
 % Base rotation angles (world frame)
 theta_b = q_prev(4); % Roll
 phi_b  = q_prev(5); % Pitch
 psi_b = q_prev(6); % Yaw
+% 
+% p0fr = p(7:9); % Front Right foot position (world frame)
+% x_fr = p0fr(1);
+% y_fr = p0fr(2);
+% z_fr = p0fr(3);
+% 
+% p0fl = p(10:12); % Front Left foot position (world frame)
+% x_fl = p0fl(1);
+% y_fl = p0fl(2);
+% z_fl = p0fl(3);
+% 
+% p0hr = p(13:15); % Hind Right foot position (world frame)
+% x_hr = p0hr(1);
+% y_hr = p0hr(2);
+% z_hr = p0hr(3);
+% 
+% p0hl = p(16:18); % Hind Left foot position (world frame)
+% x_hl = p0hl(1);
+% y_hl = p0hl(2);
+% z_hl = p0hl(3);
 
-% Robot Parameters for Jacobians
-L_sh_f_x = L_sh_f(1);L_sh_h_x = L_sh_h(1);L_th_h_x=L_th_h(1);L_th_f_x=L_th_f(1);L_th_h_mid_x=L_th_h_mid(1);L_h_x=L_h(1);
-L_sh_f_y = L_sh_f(2);L_sh_h_y = L_sh_h(2);L_th_h_y=L_th_h(2);L_th_f_y=L_th_f(2);L_th_h_mid_y=L_th_h_mid(2);L_h_y=L_h(2); 
-L_sh_f_z = L_sh_f(3);L_sh_h_z = L_sh_h(3);L_th_h_z=L_th_h(3);L_th_f_z=L_th_f(3);L_th_h_mid_z=L_th_h_mid(3);L_h_z=L_h(3); 
+%% Previous Timestep Joint Variables (for Jacobians)
+q_fr=q_prev(7:9);
+q1_fr=q_fr(1);
+q2_fr=q_fr(2);
+q3_fr=q_fr(3);
 
-% Previous Timestep Joint Variables (for Jacobians)
-q_fr=q_prev(7:9); % Front right foot
-q1_fr=q_fr(1); % Shoulder
-q2_fr=q_fr(2); % Hip
-q3_fr=q_fr(3); % Knee
+q_fl=q_prev(10:12);
+q1_fl=q_fl(1);
+q2_fl=q_fl(2);
+q3_fl=q_fl(3);
 
-q_fl=q_prev(10:12); % Front left
-q1_fl=q_fl(1); % Shoulder
-q2_fl=q_fl(2); % Hip
-q3_fl=q_fl(3); % Knee
+q_hr=q_prev(13:16);
+q1_hr=q_hr(1);
+q2_hr=q_hr(2);
+q3_hr=q_hr(3);
+q4_hr=q_hr(4);
 
-q_hr=q_prev(13:16); % Hind right
-q1_hr=q_hr(1); % Shoulder 
-q2_hr=q_hr(2); % Hip
-q3_hr=q_hr(3); % Knee
-q4_hr=q_hr(4); % Ankle
-
-q_hl=q_prev(17:20); % Hind left
-q1_hl=q_hl(1); % Shoulder
-q2_hl=q_hl(2); % Hip
-q3_hl=q_hl(3); % Knee
-q4_hl=q_hl(4); % Ankle
+q_hl=q_prev(17:20);
+q1_hl=q_hl(1);
+q2_hl=q_hl(2);
+q3_hl=q_hl(3);
+q4_hl=q_hl(4);
 
 % Trajectory Velocities
 dp0b_d = d(19:21); % Desired base velocity (world frame)
@@ -1134,8 +1163,48 @@ dp0fl_d = d(28:30); % Desired front left foot velocity (world frame)
 dp0hr_d = d(31:33); % Desired hind right foot velocity (world frame)
 dp0hl_d = d(34:36); % Desired hind left foot velocity (world frame)
 
+% Robot Parameters for Jacobians
+L_sh_f_x = L_sh_f(1);L_sh_h_x = L_sh_h(1);L_th_h_x=L_th_h(1);L_th_f_x=L_th_f(1);L_th_h_mid_x=L_th_h_mid(1);L_h_x=L_h(1);
+L_sh_f_y = L_sh_f(2);L_sh_h_y = L_sh_h(2);L_th_h_y=L_th_h(2);L_th_f_y=L_th_f(2);L_th_h_mid_y=L_th_h_mid(2);L_h_y=L_h(2); 
+L_sh_f_z = L_sh_f(3);L_sh_h_z = L_sh_h(3);L_th_h_z=L_th_h(3);L_th_f_z=L_th_f(3);L_th_h_mid_z=L_th_h_mid(3);L_h_z=L_h(3); 
+
+% %% Rotation Matrix
+% % Body Rotation Matrix
+% R_p_x =   rot(1,theta_b,4);
+% R_p_y =   rot(2,phi_b,4);
+% R_p_z =   rot(3,psi_b,4);
+% R0b = R_p_z*R_p_y*R_p_x; % Body Rotation Matrix (4x4)
+
+%% Translation Matrix
+% % Base in the World frame
+% P0b = trans([],p0b);
+
+% % Translation from Base to Shoulder joint (joint 1)
+% Pb1_fr = trans([],0.5*[L_b,-W_b,0]);  
+% Pb1_fl = trans([],0.5*[L_b,W_b,0]);
+% Pb1_hr = trans([],0.5*[-L_b,-W_b,0]);
+% Pb1_hl = trans([],0.5*[-L_b,W_b,0]);
+
+% % Translation from Shoulder (joint 1) to Hip joint (joint 2)
+% P12_fr = trans([],[L_h(1),-L_h(2),-L_h(3)]);
+% P12_fl = trans([],[L_h(1),L_h(2),-L_h(3)]);
+% P12_hr = trans([],[-L_h(1),-L_h(2),-L_h(3)]);
+% P12_hl = trans([],[-L_h(1),L_h(2),-L_h(3)]);
+% 
+% % Position of Shoulder joints (joint 1) in the World frame
+% p01_fr =  P0b*R0b*Pb1_fr*[0;0;0;1];
+% p01_fl =  P0b*R0b*Pb1_fl*[0;0;0;1];
+% p01_hr =  P0b*R0b*Pb1_hr*[0;0;0;1];
+% p01_hl =  P0b*R0b*Pb1_hl*[0;0;0;1];
+
 %% Jacobians
-% Computed symbolically by in external script and pasted here:
+% Import foot Jacobians from external script files (computed symbolically,
+%   variable values filled from workspace on script run):
+% run JJv_fr 
+% run JJv_fl
+% run JJv_hr
+% run JJv_hl
+
 Jv_fr = [1, 0, 0, 0, 1, 0, 0, 0, 1, L_h_z*(sin(psi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fr)) - L_sh_f_y*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_th_f_y*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - (conj(W_b)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)))/2 - L_h_y*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_th_f_z*cos(q2_fr)*(cos(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) + L_sh_f_z*cos(q2_fr + q3_fr)*(sin(psi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fr)) - L_th_f_x*sin(q2_fr)*(cos(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) - L_sh_f_x*sin(q2_fr + q3_fr)*(sin(psi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fr)), L_h_y*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_sh_f_y*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_th_f_y*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + (conj(W_b)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)))/2 + L_h_z*(cos(psi_b)*cos(q1_fr)*cos(theta_b) - cos(psi_b)*sin(q1_fr)*sin(theta_b) + cos(q1_fr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fr)) + L_sh_f_z*cos(q2_fr + q3_fr)*(cos(psi_b)*cos(q1_fr)*cos(theta_b) - cos(psi_b)*sin(q1_fr)*sin(theta_b) + cos(q1_fr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fr)) - L_sh_f_x*sin(q2_fr + q3_fr)*(cos(psi_b)*cos(q1_fr)*cos(theta_b) - cos(psi_b)*sin(q1_fr)*sin(theta_b) + cos(q1_fr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fr)) + L_th_f_z*cos(q2_fr)*(cos(psi_b)*cos(q1_fr)*cos(theta_b) - cos(psi_b)*sin(q1_fr)*sin(theta_b) + cos(q1_fr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fr)) + L_th_f_x*sin(q2_fr)*(cos(psi_b)*cos(q1_fr)*cos(theta_b) - cos(psi_b)*sin(q1_fr)*sin(theta_b) + cos(q1_fr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fr)), L_h_z*sin(q1_fr + theta_b)*cos(phi_b) - (cos(phi_b + theta_b)*conj(W_b))/4 - L_h_y*cos(q1_fr + theta_b)*cos(phi_b) - L_sh_f_y*cos(q1_fr + theta_b)*cos(phi_b) - L_th_f_y*cos(q1_fr + theta_b)*cos(phi_b) - (cos(phi_b - theta_b)*conj(W_b))/4 + L_th_f_z*sin(q1_fr + theta_b)*cos(phi_b)*cos(q2_fr) + L_th_f_x*sin(q1_fr + theta_b)*cos(phi_b)*sin(q2_fr) + L_sh_f_z*cos(q2_fr + q3_fr)*sin(q1_fr + theta_b)*cos(phi_b) - L_sh_f_x*sin(q2_fr + q3_fr)*sin(q1_fr + theta_b)*cos(phi_b), L_sh_f_x*(cos(psi_b)*cos(q3_fr)*(cos(q2_fr)*sin(phi_b) + cos(phi_b)*cos(q1_fr)*cos(theta_b)*sin(q2_fr) - cos(phi_b)*sin(q1_fr)*sin(q2_fr)*sin(theta_b)) - cos(psi_b)*sin(q3_fr)*(sin(phi_b)*sin(q2_fr) - cos(phi_b)*cos(q1_fr)*cos(q2_fr)*cos(theta_b) + cos(phi_b)*cos(q2_fr)*sin(q1_fr)*sin(theta_b))) + L_sh_f_z*(cos(psi_b)*cos(q3_fr)*(sin(phi_b)*sin(q2_fr) - cos(phi_b)*cos(q1_fr)*cos(q2_fr)*cos(theta_b) + cos(phi_b)*cos(q2_fr)*sin(q1_fr)*sin(theta_b)) + cos(psi_b)*sin(q3_fr)*(cos(q2_fr)*sin(phi_b) + cos(phi_b)*cos(q1_fr)*cos(theta_b)*sin(q2_fr) - cos(phi_b)*sin(q1_fr)*sin(q2_fr)*sin(theta_b))) - L_h_x*cos(psi_b)*sin(phi_b) + L_th_f_z*cos(psi_b)*(sin(phi_b)*sin(q2_fr) - cos(phi_b)*cos(q1_fr)*cos(q2_fr)*cos(theta_b) + cos(phi_b)*cos(q2_fr)*sin(q1_fr)*sin(theta_b)) - L_th_f_x*cos(psi_b)*(cos(q2_fr)*sin(phi_b) + cos(phi_b)*cos(q1_fr)*cos(theta_b)*sin(q2_fr) - cos(phi_b)*sin(q1_fr)*sin(q2_fr)*sin(theta_b)) - (conj(L_b)*cos(psi_b)*sin(phi_b))/2 - L_h_y*sin(q1_fr + theta_b)*cos(phi_b)*cos(psi_b) - L_sh_f_y*sin(q1_fr + theta_b)*cos(phi_b)*cos(psi_b) - L_th_f_y*sin(q1_fr + theta_b)*cos(phi_b)*cos(psi_b) - (conj(W_b)*cos(phi_b)*cos(psi_b)*sin(theta_b))/2 - L_h_z*cos(q1_fr + theta_b)*cos(phi_b)*cos(psi_b), L_sh_f_x*(cos(q3_fr)*sin(psi_b)*(cos(q2_fr)*sin(phi_b) + cos(phi_b)*cos(q1_fr)*cos(theta_b)*sin(q2_fr) - cos(phi_b)*sin(q1_fr)*sin(q2_fr)*sin(theta_b)) - sin(psi_b)*sin(q3_fr)*(sin(phi_b)*sin(q2_fr) - cos(phi_b)*cos(q1_fr)*cos(q2_fr)*cos(theta_b) + cos(phi_b)*cos(q2_fr)*sin(q1_fr)*sin(theta_b))) + L_sh_f_z*(cos(q3_fr)*sin(psi_b)*(sin(phi_b)*sin(q2_fr) - cos(phi_b)*cos(q1_fr)*cos(q2_fr)*cos(theta_b) + cos(phi_b)*cos(q2_fr)*sin(q1_fr)*sin(theta_b)) + sin(psi_b)*sin(q3_fr)*(cos(q2_fr)*sin(phi_b) + cos(phi_b)*cos(q1_fr)*cos(theta_b)*sin(q2_fr) - cos(phi_b)*sin(q1_fr)*sin(q2_fr)*sin(theta_b))) - L_h_x*sin(phi_b)*sin(psi_b) + L_th_f_z*sin(psi_b)*(sin(phi_b)*sin(q2_fr) - cos(phi_b)*cos(q1_fr)*cos(q2_fr)*cos(theta_b) + cos(phi_b)*cos(q2_fr)*sin(q1_fr)*sin(theta_b)) - L_th_f_x*sin(psi_b)*(cos(q2_fr)*sin(phi_b) + cos(phi_b)*cos(q1_fr)*cos(theta_b)*sin(q2_fr) - cos(phi_b)*sin(q1_fr)*sin(q2_fr)*sin(theta_b)) - (conj(L_b)*sin(phi_b)*sin(psi_b))/2 - L_h_z*cos(q1_fr + theta_b)*cos(phi_b)*sin(psi_b) - L_h_y*sin(q1_fr + theta_b)*cos(phi_b)*sin(psi_b) - L_sh_f_y*sin(q1_fr + theta_b)*cos(phi_b)*sin(psi_b) - L_th_f_y*sin(q1_fr + theta_b)*cos(phi_b)*sin(psi_b) - (conj(W_b)*cos(phi_b)*sin(psi_b)*sin(theta_b))/2, L_h_y*(cos(q1_fr)*sin(phi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(q1_fr)) - L_h_z*(sin(phi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(phi_b)) + L_sh_f_y*(cos(q1_fr)*sin(phi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(q1_fr)) + L_th_f_y*(cos(q1_fr)*sin(phi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(q1_fr)) - L_h_x*cos(phi_b) + L_sh_f_x*(cos(q3_fr)*(cos(phi_b)*cos(q2_fr) + sin(q2_fr)*(sin(phi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(phi_b))) - sin(q3_fr)*(cos(phi_b)*sin(q2_fr) - cos(q2_fr)*(sin(phi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(phi_b)))) + L_sh_f_z*(cos(q3_fr)*(cos(phi_b)*sin(q2_fr) - cos(q2_fr)*(sin(phi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(phi_b))) + sin(q3_fr)*(cos(phi_b)*cos(q2_fr) + sin(q2_fr)*(sin(phi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(phi_b)))) - L_th_f_x*(cos(phi_b)*cos(q2_fr) + sin(q2_fr)*(sin(phi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(phi_b))) + L_th_f_z*(cos(phi_b)*sin(q2_fr) - cos(q2_fr)*(sin(phi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(phi_b))) - (conj(L_b)*cos(phi_b))/2 + (conj(W_b)*sin(phi_b)*sin(theta_b))/2, L_sh_f_x*(cos(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fr)*sin(psi_b)) + sin(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fr))) - L_th_f_z*(cos(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fr)) - L_th_f_x*(sin(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fr)*sin(psi_b)) - L_sh_f_z*(cos(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fr)) - sin(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fr)*sin(psi_b))) + L_h_y*(cos(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)) - sin(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b))) - L_h_z*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_sh_f_y*(cos(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)) - sin(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b))) + L_th_f_y*(cos(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)) - sin(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b))) + (conj(W_b)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)))/2 - L_h_x*cos(phi_b)*sin(psi_b) - (conj(L_b)*cos(phi_b)*sin(psi_b))/2, L_sh_f_x*(cos(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fr)) + sin(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fr))) - L_sh_f_z*(cos(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fr)) - sin(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fr))) + L_h_y*(cos(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) - L_h_z*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + L_sh_f_y*(cos(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) + L_th_f_y*(cos(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) + (conj(W_b)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)))/2 - L_th_f_x*(sin(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fr)) - L_th_f_z*(cos(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fr)) + L_h_x*cos(phi_b)*cos(psi_b) + (conj(L_b)*cos(phi_b)*cos(psi_b))/2, 0, L_h_z*(sin(psi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fr)) - L_sh_f_y*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_th_f_y*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_h_y*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_th_f_z*cos(q2_fr)*(cos(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) + L_sh_f_z*cos(q2_fr + q3_fr)*(sin(psi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fr)) - L_th_f_x*sin(q2_fr)*(cos(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) - L_sh_f_x*sin(q2_fr + q3_fr)*(sin(psi_b)*sin(q1_fr)*sin(theta_b) - cos(q1_fr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fr)), L_h_y*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_sh_f_y*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_th_f_y*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_h_z*(cos(psi_b)*cos(q1_fr)*cos(theta_b) - cos(psi_b)*sin(q1_fr)*sin(theta_b) + cos(q1_fr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fr)) + L_sh_f_z*cos(q2_fr + q3_fr)*(cos(psi_b)*cos(q1_fr)*cos(theta_b) - cos(psi_b)*sin(q1_fr)*sin(theta_b) + cos(q1_fr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fr)) - L_sh_f_x*sin(q2_fr + q3_fr)*(cos(psi_b)*cos(q1_fr)*cos(theta_b) - cos(psi_b)*sin(q1_fr)*sin(theta_b) + cos(q1_fr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fr)) + L_th_f_z*cos(q2_fr)*(cos(psi_b)*cos(q1_fr)*cos(theta_b) - cos(psi_b)*sin(q1_fr)*sin(theta_b) + cos(q1_fr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fr)) + L_th_f_x*sin(q2_fr)*(cos(psi_b)*cos(q1_fr)*cos(theta_b) - cos(psi_b)*sin(q1_fr)*sin(theta_b) + cos(q1_fr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fr)), -cos(phi_b)*(L_h_y*cos(q1_fr + theta_b) + L_sh_f_y*cos(q1_fr + theta_b) + L_th_f_y*cos(q1_fr + theta_b) - L_h_z*sin(q1_fr + theta_b) - L_sh_f_z*cos(q2_fr + q3_fr)*sin(q1_fr + theta_b) + L_sh_f_x*sin(q2_fr + q3_fr)*sin(q1_fr + theta_b) - L_th_f_z*sin(q1_fr + theta_b)*cos(q2_fr) - L_th_f_x*sin(q1_fr + theta_b)*sin(q2_fr)), L_sh_f_x*(cos(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fr)) - sin(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fr))) + L_sh_f_z*(cos(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fr)) + sin(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fr))) - L_th_f_x*(cos(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fr)) + L_th_f_z*(sin(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fr)), L_th_f_x*(cos(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fr)) - L_th_f_z*(sin(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fr)*sin(psi_b)) - L_sh_f_x*(cos(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fr)) - sin(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fr)*sin(psi_b))) - L_sh_f_z*(cos(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fr)*sin(psi_b)) + sin(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fr))), L_sh_f_z*(cos(q3_fr)*(cos(q2_fr)*sin(phi_b) + sin(q2_fr)*(cos(phi_b)*cos(q1_fr)*cos(theta_b) - cos(phi_b)*sin(q1_fr)*sin(theta_b))) - sin(q3_fr)*(sin(phi_b)*sin(q2_fr) - cos(q2_fr)*(cos(phi_b)*cos(q1_fr)*cos(theta_b) - cos(phi_b)*sin(q1_fr)*sin(theta_b)))) - L_sh_f_x*(cos(q3_fr)*(sin(phi_b)*sin(q2_fr) - cos(q2_fr)*(cos(phi_b)*cos(q1_fr)*cos(theta_b) - cos(phi_b)*sin(q1_fr)*sin(theta_b))) + sin(q3_fr)*(cos(q2_fr)*sin(phi_b) + sin(q2_fr)*(cos(phi_b)*cos(q1_fr)*cos(theta_b) - cos(phi_b)*sin(q1_fr)*sin(theta_b)))) + L_th_f_x*(sin(phi_b)*sin(q2_fr) - cos(q2_fr)*(cos(phi_b)*cos(q1_fr)*cos(theta_b) - cos(phi_b)*sin(q1_fr)*sin(theta_b))) + L_th_f_z*(cos(q2_fr)*sin(phi_b) + sin(q2_fr)*(cos(phi_b)*cos(q1_fr)*cos(theta_b) - cos(phi_b)*sin(q1_fr)*sin(theta_b))), L_sh_f_x*(cos(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fr)) - sin(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fr))) + L_sh_f_z*(cos(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fr)) + sin(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fr))), - L_sh_f_x*(cos(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fr)) - sin(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fr)*sin(psi_b))) - L_sh_f_z*(cos(q3_fr)*(sin(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fr)*sin(psi_b)) + sin(q3_fr)*(cos(q2_fr)*(cos(q1_fr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fr))), L_sh_f_z*(cos(q3_fr)*(cos(q2_fr)*sin(phi_b) + sin(q2_fr)*(cos(phi_b)*cos(q1_fr)*cos(theta_b) - cos(phi_b)*sin(q1_fr)*sin(theta_b))) - sin(q3_fr)*(sin(phi_b)*sin(q2_fr) - cos(q2_fr)*(cos(phi_b)*cos(q1_fr)*cos(theta_b) - cos(phi_b)*sin(q1_fr)*sin(theta_b)))) - L_sh_f_x*(cos(q3_fr)*(sin(phi_b)*sin(q2_fr) - cos(q2_fr)*(cos(phi_b)*cos(q1_fr)*cos(theta_b) - cos(phi_b)*sin(q1_fr)*sin(theta_b))) + sin(q3_fr)*(cos(q2_fr)*sin(phi_b) + sin(q2_fr)*(cos(phi_b)*cos(q1_fr)*cos(theta_b) - cos(phi_b)*sin(q1_fr)*sin(theta_b)))), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 Jv_fl = [1, 0, 0, 0, 1, 0, 0, 0, 1, (W_b*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)))/2 + L_h_y*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + L_sh_f_y*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + L_th_f_y*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + L_h_z*(sin(psi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fl)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fl)) - L_th_f_z*cos(q2_fl)*(cos(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) + L_sh_f_z*cos(q2_fl + q3_fl)*(sin(psi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fl)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fl)) - L_th_f_x*sin(q2_fl)*(cos(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) - L_sh_f_x*sin(q2_fl + q3_fl)*(sin(psi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fl)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fl)), L_h_z*(cos(psi_b)*cos(q1_fl)*cos(theta_b) - cos(psi_b)*sin(q1_fl)*sin(theta_b) + cos(q1_fl)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fl)) - L_h_y*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - L_sh_f_y*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - L_th_f_y*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - (W_b*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)))/2 + L_sh_f_z*cos(q2_fl + q3_fl)*(cos(psi_b)*cos(q1_fl)*cos(theta_b) - cos(psi_b)*sin(q1_fl)*sin(theta_b) + cos(q1_fl)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fl)) - L_sh_f_x*sin(q2_fl + q3_fl)*(cos(psi_b)*cos(q1_fl)*cos(theta_b) - cos(psi_b)*sin(q1_fl)*sin(theta_b) + cos(q1_fl)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fl)) + L_th_f_z*cos(q2_fl)*(cos(psi_b)*cos(q1_fl)*cos(theta_b) - cos(psi_b)*sin(q1_fl)*sin(theta_b) + cos(q1_fl)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fl)) + L_th_f_x*sin(q2_fl)*(cos(psi_b)*cos(q1_fl)*cos(theta_b) - cos(psi_b)*sin(q1_fl)*sin(theta_b) + cos(q1_fl)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fl)), (W_b*cos(phi_b + theta_b))/4 + (W_b*cos(phi_b - theta_b))/4 + L_h_y*cos(q1_fl + theta_b)*cos(phi_b) + L_sh_f_y*cos(q1_fl + theta_b)*cos(phi_b) + L_th_f_y*cos(q1_fl + theta_b)*cos(phi_b) + L_h_z*sin(q1_fl + theta_b)*cos(phi_b) + L_th_f_z*sin(q1_fl + theta_b)*cos(phi_b)*cos(q2_fl) + L_th_f_x*sin(q1_fl + theta_b)*cos(phi_b)*sin(q2_fl) + L_sh_f_z*cos(q2_fl + q3_fl)*sin(q1_fl + theta_b)*cos(phi_b) - L_sh_f_x*sin(q2_fl + q3_fl)*sin(q1_fl + theta_b)*cos(phi_b), (cos(psi_b)*(W_b*cos(phi_b)*sin(theta_b) - 2*L_h_x*sin(phi_b) - 2*L_th_f_x*cos(q2_fl)*sin(phi_b) - L_b*sin(phi_b) + 2*L_th_f_z*sin(phi_b)*sin(q2_fl) - 2*L_h_z*cos(phi_b)*cos(q1_fl)*cos(theta_b) + 2*L_sh_f_x*cos(q2_fl)*cos(q3_fl)*sin(phi_b) + 2*L_h_y*cos(phi_b)*cos(q1_fl)*sin(theta_b) + 2*L_h_y*cos(phi_b)*cos(theta_b)*sin(q1_fl) + 2*L_sh_f_y*cos(phi_b)*cos(q1_fl)*sin(theta_b) + 2*L_sh_f_y*cos(phi_b)*cos(theta_b)*sin(q1_fl) + 2*L_th_f_y*cos(phi_b)*cos(q1_fl)*sin(theta_b) + 2*L_th_f_y*cos(phi_b)*cos(theta_b)*sin(q1_fl) + 2*L_sh_f_z*cos(q2_fl)*sin(phi_b)*sin(q3_fl) + 2*L_sh_f_z*cos(q3_fl)*sin(phi_b)*sin(q2_fl) + 2*L_h_z*cos(phi_b)*sin(q1_fl)*sin(theta_b) - 2*L_sh_f_x*sin(phi_b)*sin(q2_fl)*sin(q3_fl) - 2*L_th_f_z*cos(phi_b)*cos(q1_fl)*cos(q2_fl)*cos(theta_b) - 2*L_th_f_x*cos(phi_b)*cos(q1_fl)*cos(theta_b)*sin(q2_fl) + 2*L_th_f_z*cos(phi_b)*cos(q2_fl)*sin(q1_fl)*sin(theta_b) + 2*L_th_f_x*cos(phi_b)*sin(q1_fl)*sin(q2_fl)*sin(theta_b) - 2*L_sh_f_x*cos(phi_b)*cos(q2_fl)*sin(q1_fl)*sin(q3_fl)*sin(theta_b) - 2*L_sh_f_x*cos(phi_b)*cos(q3_fl)*sin(q1_fl)*sin(q2_fl)*sin(theta_b) - 2*L_sh_f_z*cos(phi_b)*sin(q1_fl)*sin(q2_fl)*sin(q3_fl)*sin(theta_b) - 2*L_sh_f_z*cos(phi_b)*cos(q1_fl)*cos(q2_fl)*cos(q3_fl)*cos(theta_b) + 2*L_sh_f_x*cos(phi_b)*cos(q1_fl)*cos(q2_fl)*cos(theta_b)*sin(q3_fl) + 2*L_sh_f_x*cos(phi_b)*cos(q1_fl)*cos(q3_fl)*cos(theta_b)*sin(q2_fl) + 2*L_sh_f_z*cos(phi_b)*cos(q1_fl)*cos(theta_b)*sin(q2_fl)*sin(q3_fl) + 2*L_sh_f_z*cos(phi_b)*cos(q2_fl)*cos(q3_fl)*sin(q1_fl)*sin(theta_b)))/2, (sin(psi_b)*(W_b*cos(phi_b)*sin(theta_b) - 2*L_h_x*sin(phi_b) - 2*L_th_f_x*cos(q2_fl)*sin(phi_b) - L_b*sin(phi_b) + 2*L_th_f_z*sin(phi_b)*sin(q2_fl) - 2*L_h_z*cos(phi_b)*cos(q1_fl)*cos(theta_b) + 2*L_sh_f_x*cos(q2_fl)*cos(q3_fl)*sin(phi_b) + 2*L_h_y*cos(phi_b)*cos(q1_fl)*sin(theta_b) + 2*L_h_y*cos(phi_b)*cos(theta_b)*sin(q1_fl) + 2*L_sh_f_y*cos(phi_b)*cos(q1_fl)*sin(theta_b) + 2*L_sh_f_y*cos(phi_b)*cos(theta_b)*sin(q1_fl) + 2*L_th_f_y*cos(phi_b)*cos(q1_fl)*sin(theta_b) + 2*L_th_f_y*cos(phi_b)*cos(theta_b)*sin(q1_fl) + 2*L_sh_f_z*cos(q2_fl)*sin(phi_b)*sin(q3_fl) + 2*L_sh_f_z*cos(q3_fl)*sin(phi_b)*sin(q2_fl) + 2*L_h_z*cos(phi_b)*sin(q1_fl)*sin(theta_b) - 2*L_sh_f_x*sin(phi_b)*sin(q2_fl)*sin(q3_fl) - 2*L_th_f_z*cos(phi_b)*cos(q1_fl)*cos(q2_fl)*cos(theta_b) - 2*L_th_f_x*cos(phi_b)*cos(q1_fl)*cos(theta_b)*sin(q2_fl) + 2*L_th_f_z*cos(phi_b)*cos(q2_fl)*sin(q1_fl)*sin(theta_b) + 2*L_th_f_x*cos(phi_b)*sin(q1_fl)*sin(q2_fl)*sin(theta_b) - 2*L_sh_f_x*cos(phi_b)*cos(q2_fl)*sin(q1_fl)*sin(q3_fl)*sin(theta_b) - 2*L_sh_f_x*cos(phi_b)*cos(q3_fl)*sin(q1_fl)*sin(q2_fl)*sin(theta_b) - 2*L_sh_f_z*cos(phi_b)*sin(q1_fl)*sin(q2_fl)*sin(q3_fl)*sin(theta_b) - 2*L_sh_f_z*cos(phi_b)*cos(q1_fl)*cos(q2_fl)*cos(q3_fl)*cos(theta_b) + 2*L_sh_f_x*cos(phi_b)*cos(q1_fl)*cos(q2_fl)*cos(theta_b)*sin(q3_fl) + 2*L_sh_f_x*cos(phi_b)*cos(q1_fl)*cos(q3_fl)*cos(theta_b)*sin(q2_fl) + 2*L_sh_f_z*cos(phi_b)*cos(q1_fl)*cos(theta_b)*sin(q2_fl)*sin(q3_fl) + 2*L_sh_f_z*cos(phi_b)*cos(q2_fl)*cos(q3_fl)*sin(q1_fl)*sin(theta_b)))/2, L_sh_f_x*(cos(q3_fl)*(cos(phi_b)*cos(q2_fl) + sin(q2_fl)*(sin(phi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(phi_b))) - sin(q3_fl)*(cos(phi_b)*sin(q2_fl) - cos(q2_fl)*(sin(phi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(phi_b)))) - L_h_z*(sin(phi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(phi_b)) - L_sh_f_y*(cos(q1_fl)*sin(phi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(q1_fl)) - L_th_f_y*(cos(q1_fl)*sin(phi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(q1_fl)) - (L_b*cos(phi_b))/2 - L_h_x*cos(phi_b) - L_h_y*(cos(q1_fl)*sin(phi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(q1_fl)) + L_sh_f_z*(cos(q3_fl)*(cos(phi_b)*sin(q2_fl) - cos(q2_fl)*(sin(phi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(phi_b))) + sin(q3_fl)*(cos(phi_b)*cos(q2_fl) + sin(q2_fl)*(sin(phi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(phi_b)))) - L_th_f_x*(cos(phi_b)*cos(q2_fl) + sin(q2_fl)*(sin(phi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(phi_b))) + L_th_f_z*(cos(phi_b)*sin(q2_fl) - cos(q2_fl)*(sin(phi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(phi_b))) - (W_b*sin(phi_b)*sin(theta_b))/2, L_sh_f_x*(cos(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fl)*sin(psi_b)) + sin(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fl))) - L_th_f_z*(cos(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fl)) - (W_b*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)))/2 - L_th_f_x*(sin(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fl)*sin(psi_b)) - L_sh_f_z*(cos(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fl)) - sin(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fl)*sin(psi_b))) - L_h_y*(cos(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)) - sin(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b))) - L_h_z*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - L_sh_f_y*(cos(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)) - sin(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b))) - L_th_f_y*(cos(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)) - sin(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b))) - (L_b*cos(phi_b)*sin(psi_b))/2 - L_h_x*cos(phi_b)*sin(psi_b), L_sh_f_x*(cos(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fl)) + sin(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fl))) - L_sh_f_z*(cos(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fl)) - sin(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fl))) - (W_b*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)))/2 - L_h_y*(cos(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) - L_h_z*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_sh_f_y*(cos(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) - L_th_f_y*(cos(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) - L_th_f_x*(sin(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fl)) - L_th_f_z*(cos(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fl)) + (L_b*cos(phi_b)*cos(psi_b))/2 + L_h_x*cos(phi_b)*cos(psi_b), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, L_h_y*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + L_sh_f_y*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + L_th_f_y*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + L_h_z*(sin(psi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fl)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fl)) - L_th_f_z*cos(q2_fl)*(cos(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) + L_sh_f_z*cos(q2_fl + q3_fl)*(sin(psi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fl)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fl)) - L_th_f_x*sin(q2_fl)*(cos(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) - L_sh_f_x*sin(q2_fl + q3_fl)*(sin(psi_b)*sin(q1_fl)*sin(theta_b) - cos(q1_fl)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_fl)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_fl)), L_h_z*(cos(psi_b)*cos(q1_fl)*cos(theta_b) - cos(psi_b)*sin(q1_fl)*sin(theta_b) + cos(q1_fl)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fl)) - L_sh_f_y*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - L_th_f_y*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - L_h_y*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_sh_f_z*cos(q2_fl + q3_fl)*(cos(psi_b)*cos(q1_fl)*cos(theta_b) - cos(psi_b)*sin(q1_fl)*sin(theta_b) + cos(q1_fl)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fl)) - L_sh_f_x*sin(q2_fl + q3_fl)*(cos(psi_b)*cos(q1_fl)*cos(theta_b) - cos(psi_b)*sin(q1_fl)*sin(theta_b) + cos(q1_fl)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fl)) + L_th_f_z*cos(q2_fl)*(cos(psi_b)*cos(q1_fl)*cos(theta_b) - cos(psi_b)*sin(q1_fl)*sin(theta_b) + cos(q1_fl)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fl)) + L_th_f_x*sin(q2_fl)*(cos(psi_b)*cos(q1_fl)*cos(theta_b) - cos(psi_b)*sin(q1_fl)*sin(theta_b) + cos(q1_fl)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_fl)), cos(phi_b)*(L_h_y*cos(q1_fl + theta_b) + L_sh_f_y*cos(q1_fl + theta_b) + L_th_f_y*cos(q1_fl + theta_b) + L_h_z*sin(q1_fl + theta_b) + L_sh_f_z*cos(q2_fl + q3_fl)*sin(q1_fl + theta_b) - L_sh_f_x*sin(q2_fl + q3_fl)*sin(q1_fl + theta_b) + L_th_f_z*sin(q1_fl + theta_b)*cos(q2_fl) + L_th_f_x*sin(q1_fl + theta_b)*sin(q2_fl)), L_sh_f_x*(cos(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fl)) - sin(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fl))) + L_sh_f_z*(cos(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fl)) + sin(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fl))) - L_th_f_x*(cos(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fl)) + L_th_f_z*(sin(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fl)), L_th_f_x*(cos(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fl)) - L_th_f_z*(sin(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fl)*sin(psi_b)) - L_sh_f_x*(cos(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fl)) - sin(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fl)*sin(psi_b))) - L_sh_f_z*(cos(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fl)*sin(psi_b)) + sin(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fl))), L_sh_f_z*(cos(q3_fl)*(cos(q2_fl)*sin(phi_b) + sin(q2_fl)*(cos(phi_b)*cos(q1_fl)*cos(theta_b) - cos(phi_b)*sin(q1_fl)*sin(theta_b))) - sin(q3_fl)*(sin(phi_b)*sin(q2_fl) - cos(q2_fl)*(cos(phi_b)*cos(q1_fl)*cos(theta_b) - cos(phi_b)*sin(q1_fl)*sin(theta_b)))) - L_sh_f_x*(cos(q3_fl)*(sin(phi_b)*sin(q2_fl) - cos(q2_fl)*(cos(phi_b)*cos(q1_fl)*cos(theta_b) - cos(phi_b)*sin(q1_fl)*sin(theta_b))) + sin(q3_fl)*(cos(q2_fl)*sin(phi_b) + sin(q2_fl)*(cos(phi_b)*cos(q1_fl)*cos(theta_b) - cos(phi_b)*sin(q1_fl)*sin(theta_b)))) + L_th_f_x*(sin(phi_b)*sin(q2_fl) - cos(q2_fl)*(cos(phi_b)*cos(q1_fl)*cos(theta_b) - cos(phi_b)*sin(q1_fl)*sin(theta_b))) + L_th_f_z*(cos(q2_fl)*sin(phi_b) + sin(q2_fl)*(cos(phi_b)*cos(q1_fl)*cos(theta_b) - cos(phi_b)*sin(q1_fl)*sin(theta_b))), L_sh_f_x*(cos(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fl)) - sin(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fl))) + L_sh_f_z*(cos(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_fl)) + sin(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_fl)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_fl))), - L_sh_f_x*(cos(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fl)) - sin(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fl)*sin(psi_b))) - L_sh_f_z*(cos(q3_fl)*(sin(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_fl)*sin(psi_b)) + sin(q3_fl)*(cos(q2_fl)*(cos(q1_fl)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_fl)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_fl))), L_sh_f_z*(cos(q3_fl)*(cos(q2_fl)*sin(phi_b) + sin(q2_fl)*(cos(phi_b)*cos(q1_fl)*cos(theta_b) - cos(phi_b)*sin(q1_fl)*sin(theta_b))) - sin(q3_fl)*(sin(phi_b)*sin(q2_fl) - cos(q2_fl)*(cos(phi_b)*cos(q1_fl)*cos(theta_b) - cos(phi_b)*sin(q1_fl)*sin(theta_b)))) - L_sh_f_x*(cos(q3_fl)*(sin(phi_b)*sin(q2_fl) - cos(q2_fl)*(cos(phi_b)*cos(q1_fl)*cos(theta_b) - cos(phi_b)*sin(q1_fl)*sin(theta_b))) + sin(q3_fl)*(cos(q2_fl)*sin(phi_b) + sin(q2_fl)*(cos(phi_b)*cos(q1_fl)*cos(theta_b) - cos(phi_b)*sin(q1_fl)*sin(theta_b)))), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 Jv_hr = [1, 0, 0, 0, 1, 0, 0, 0, 1, L_h_z*(sin(psi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_hr)) - L_h_y*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_sh_h_y*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_th_h_y*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_th_h_mid_y*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - (W_b*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)))/2 - L_th_h_z*cos(q2_hr)*(cos(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) + L_th_h_mid_z*cos(q2_hr + q3_hr)*(sin(psi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_hr)) + L_th_h_x*sin(q2_hr)*(cos(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) - L_th_h_mid_x*sin(q2_hr + q3_hr)*(sin(psi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_hr)) + L_sh_h_z*cos(q2_hr + q3_hr + q4_hr)*(sin(psi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_hr)) - L_sh_h_x*sin(q2_hr + q3_hr + q4_hr)*(sin(psi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_hr)), (W_b*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)))/2 + L_h_y*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_sh_h_y*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_th_h_y*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_th_h_mid_y*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_h_z*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) + L_th_h_mid_z*cos(q2_hr + q3_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) - L_th_h_mid_x*sin(q2_hr + q3_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) + L_th_h_z*cos(q2_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) - L_th_h_x*sin(q2_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) + L_sh_h_z*cos(q2_hr + q3_hr + q4_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) - L_sh_h_x*sin(q2_hr + q3_hr + q4_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)), L_h_z*sin(q1_hr + theta_b)*cos(phi_b) - (W_b*cos(phi_b - theta_b))/4 - L_h_y*cos(q1_hr + theta_b)*cos(phi_b) - L_sh_h_y*cos(q1_hr + theta_b)*cos(phi_b) - L_th_h_y*cos(q1_hr + theta_b)*cos(phi_b) - L_th_h_mid_y*cos(q1_hr + theta_b)*cos(phi_b) - (W_b*cos(phi_b + theta_b))/4 + L_th_h_z*sin(q1_hr + theta_b)*cos(phi_b)*cos(q2_hr) - L_th_h_x*sin(q1_hr + theta_b)*cos(phi_b)*sin(q2_hr) + L_sh_h_z*cos(q2_hr + q3_hr + q4_hr)*sin(q1_hr + theta_b)*cos(phi_b) - L_sh_h_x*sin(q2_hr + q3_hr + q4_hr)*sin(q1_hr + theta_b)*cos(phi_b) + L_th_h_mid_z*cos(q2_hr + q3_hr)*sin(q1_hr + theta_b)*cos(phi_b) - L_th_h_mid_x*sin(q2_hr + q3_hr)*sin(q1_hr + theta_b)*cos(phi_b), L_th_h_mid_x*(cos(psi_b)*cos(q3_hr)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b)) - cos(psi_b)*sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b))) + L_th_h_mid_z*(cos(psi_b)*cos(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b)) + cos(psi_b)*sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b))) + L_sh_h_x*(cos(q4_hr)*(cos(psi_b)*cos(q3_hr)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b)) - cos(psi_b)*sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b))) - sin(q4_hr)*(cos(psi_b)*cos(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b)) + cos(psi_b)*sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b)))) + L_sh_h_z*(cos(q4_hr)*(cos(psi_b)*cos(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b)) + cos(psi_b)*sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b))) + sin(q4_hr)*(cos(psi_b)*cos(q3_hr)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b)) - cos(psi_b)*sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b)))) + (L_b*cos(psi_b)*sin(phi_b))/2 + L_h_x*cos(psi_b)*sin(phi_b) + L_th_h_z*cos(psi_b)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b)) + L_th_h_x*cos(psi_b)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b)) - L_h_y*sin(q1_hr + theta_b)*cos(phi_b)*cos(psi_b) - L_sh_h_y*sin(q1_hr + theta_b)*cos(phi_b)*cos(psi_b) - L_th_h_y*sin(q1_hr + theta_b)*cos(phi_b)*cos(psi_b) - L_th_h_mid_y*sin(q1_hr + theta_b)*cos(phi_b)*cos(psi_b) - (W_b*cos(phi_b)*cos(psi_b)*sin(theta_b))/2 - L_h_z*cos(q1_hr + theta_b)*cos(phi_b)*cos(psi_b), L_sh_h_x*(cos(q4_hr)*(cos(q3_hr)*sin(psi_b)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b)) - sin(psi_b)*sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b))) - sin(q4_hr)*(cos(q3_hr)*sin(psi_b)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b)) + sin(psi_b)*sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b)))) + L_sh_h_z*(cos(q4_hr)*(cos(q3_hr)*sin(psi_b)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b)) + sin(psi_b)*sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b))) + sin(q4_hr)*(cos(q3_hr)*sin(psi_b)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b)) - sin(psi_b)*sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b)))) + L_th_h_mid_x*(cos(q3_hr)*sin(psi_b)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b)) - sin(psi_b)*sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b))) + L_th_h_mid_z*(cos(q3_hr)*sin(psi_b)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b)) + sin(psi_b)*sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b))) + (L_b*sin(phi_b)*sin(psi_b))/2 + L_h_x*sin(phi_b)*sin(psi_b) + L_th_h_z*sin(psi_b)*(sin(phi_b)*sin(q2_hr) - cos(phi_b)*cos(q1_hr)*cos(q2_hr)*cos(theta_b) + cos(phi_b)*cos(q2_hr)*sin(q1_hr)*sin(theta_b)) + L_th_h_x*sin(psi_b)*(cos(q2_hr)*sin(phi_b) + cos(phi_b)*cos(q1_hr)*cos(theta_b)*sin(q2_hr) - cos(phi_b)*sin(q1_hr)*sin(q2_hr)*sin(theta_b)) - L_h_z*cos(q1_hr + theta_b)*cos(phi_b)*sin(psi_b) - L_h_y*sin(q1_hr + theta_b)*cos(phi_b)*sin(psi_b) - L_sh_h_y*sin(q1_hr + theta_b)*cos(phi_b)*sin(psi_b) - L_th_h_y*sin(q1_hr + theta_b)*cos(phi_b)*sin(psi_b) - L_th_h_mid_y*sin(q1_hr + theta_b)*cos(phi_b)*sin(psi_b) - (W_b*cos(phi_b)*sin(psi_b)*sin(theta_b))/2, L_h_y*(cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(q1_hr)) - L_h_z*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b)) + L_sh_h_y*(cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(q1_hr)) + L_th_h_y*(cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(q1_hr)) + L_th_h_mid_y*(cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(q1_hr)) + L_sh_h_x*(cos(q4_hr)*(cos(q3_hr)*(cos(phi_b)*cos(q2_hr) + sin(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b))) - sin(q3_hr)*(cos(phi_b)*sin(q2_hr) - cos(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b)))) - sin(q4_hr)*(cos(q3_hr)*(cos(phi_b)*sin(q2_hr) - cos(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b))) + sin(q3_hr)*(cos(phi_b)*cos(q2_hr) + sin(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b))))) + L_sh_h_z*(cos(q4_hr)*(cos(q3_hr)*(cos(phi_b)*sin(q2_hr) - cos(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b))) + sin(q3_hr)*(cos(phi_b)*cos(q2_hr) + sin(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b)))) + sin(q4_hr)*(cos(q3_hr)*(cos(phi_b)*cos(q2_hr) + sin(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b))) - sin(q3_hr)*(cos(phi_b)*sin(q2_hr) - cos(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b))))) + (L_b*cos(phi_b))/2 + L_h_x*cos(phi_b) + L_th_h_mid_x*(cos(q3_hr)*(cos(phi_b)*cos(q2_hr) + sin(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b))) - sin(q3_hr)*(cos(phi_b)*sin(q2_hr) - cos(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b)))) + L_th_h_mid_z*(cos(q3_hr)*(cos(phi_b)*sin(q2_hr) - cos(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b))) + sin(q3_hr)*(cos(phi_b)*cos(q2_hr) + sin(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b)))) + L_th_h_x*(cos(phi_b)*cos(q2_hr) + sin(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b))) + L_th_h_z*(cos(phi_b)*sin(q2_hr) - cos(q2_hr)*(sin(phi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(phi_b))) + (W_b*sin(phi_b)*sin(theta_b))/2, L_th_h_x*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) - L_th_h_z*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) + (W_b*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)))/2 + L_th_h_mid_x*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr))) - L_th_h_mid_z*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b))) + L_h_y*(cos(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)) - sin(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b))) - L_h_z*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_sh_h_y*(cos(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)) - sin(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b))) + L_th_h_y*(cos(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)) - sin(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b))) + L_th_h_mid_y*(cos(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b)) - sin(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b))) + L_sh_h_x*(cos(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr))) + sin(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)))) - L_sh_h_z*(cos(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b))) - sin(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)))) + (L_b*cos(phi_b)*sin(psi_b))/2 + L_h_x*cos(phi_b)*sin(psi_b), L_th_h_mid_x*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr))) - L_th_h_mid_z*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr))) + (W_b*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)))/2 + L_sh_h_x*(cos(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr))) + sin(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)))) - L_sh_h_z*(cos(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr))) - sin(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)))) + L_h_y*(cos(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) - L_h_z*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + L_sh_h_y*(cos(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) + L_th_h_y*(cos(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) + L_th_h_mid_y*(cos(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) + L_th_h_x*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) - L_th_h_z*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - (L_b*cos(phi_b)*cos(psi_b))/2 - L_h_x*cos(phi_b)*cos(psi_b), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, L_h_z*(sin(psi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_hr)) - L_sh_h_y*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_th_h_y*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_th_h_mid_y*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_h_y*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - L_th_h_z*cos(q2_hr)*(cos(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) + L_th_h_mid_z*cos(q2_hr + q3_hr)*(sin(psi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_hr)) + L_th_h_x*sin(q2_hr)*(cos(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b)) - sin(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b))) - L_th_h_mid_x*sin(q2_hr + q3_hr)*(sin(psi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_hr)) + L_sh_h_z*cos(q2_hr + q3_hr + q4_hr)*(sin(psi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_hr)) - L_sh_h_x*sin(q2_hr + q3_hr + q4_hr)*(sin(psi_b)*sin(q1_hr)*sin(theta_b) - cos(q1_hr)*cos(theta_b)*sin(psi_b) + cos(psi_b)*cos(q1_hr)*sin(phi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)*sin(q1_hr)), L_h_y*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_sh_h_y*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_th_h_y*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_th_h_mid_y*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + L_h_z*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) + L_th_h_mid_z*cos(q2_hr + q3_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) - L_th_h_mid_x*sin(q2_hr + q3_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) + L_th_h_z*cos(q2_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) - L_th_h_x*sin(q2_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) + L_sh_h_z*cos(q2_hr + q3_hr + q4_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)) - L_sh_h_x*sin(q2_hr + q3_hr + q4_hr)*(cos(psi_b)*cos(q1_hr)*cos(theta_b) - cos(psi_b)*sin(q1_hr)*sin(theta_b) + cos(q1_hr)*sin(phi_b)*sin(psi_b)*sin(theta_b) + cos(theta_b)*sin(phi_b)*sin(psi_b)*sin(q1_hr)), -cos(phi_b)*(L_h_y*cos(q1_hr + theta_b) + L_sh_h_y*cos(q1_hr + theta_b) + L_th_h_y*cos(q1_hr + theta_b) + L_th_h_mid_y*cos(q1_hr + theta_b) - L_h_z*sin(q1_hr + theta_b) - L_th_h_mid_z*cos(q2_hr + q3_hr)*sin(q1_hr + theta_b) + L_th_h_mid_x*sin(q2_hr + q3_hr)*sin(q1_hr + theta_b) - L_th_h_z*sin(q1_hr + theta_b)*cos(q2_hr) + L_th_h_x*sin(q1_hr + theta_b)*sin(q2_hr) - L_sh_h_z*cos(q2_hr + q3_hr + q4_hr)*sin(q1_hr + theta_b) + L_sh_h_x*sin(q2_hr + q3_hr + q4_hr)*sin(q1_hr + theta_b)), L_th_h_mid_x*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr))) + L_th_h_mid_z*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr))) + L_sh_h_x*(cos(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr))) - sin(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)))) + L_sh_h_z*(cos(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr))) + sin(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)))) + L_th_h_x*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) + L_th_h_z*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)), - L_th_h_x*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - L_th_h_z*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) - L_th_h_mid_x*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b))) - L_th_h_mid_z*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr))) - L_sh_h_x*(cos(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b))) - sin(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)))) - L_sh_h_z*(cos(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr))) + sin(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)))), L_th_h_mid_z*(cos(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) - sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b)))) - L_sh_h_z*(sin(q4_hr)*(cos(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) + sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b)))) - cos(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) - sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))))) - L_th_h_mid_x*(cos(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) + sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b)))) - L_sh_h_x*(sin(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) - sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b)))) + cos(q4_hr)*(cos(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) + sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))))) - L_th_h_x*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) + L_th_h_z*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))), L_th_h_mid_x*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr))) + L_th_h_mid_z*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr))) + L_sh_h_x*(cos(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr))) - sin(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)))) + L_sh_h_z*(cos(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr))) + sin(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)))), - L_th_h_mid_x*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b))) - L_th_h_mid_z*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr))) - L_sh_h_x*(cos(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b))) - sin(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)))) - L_sh_h_z*(cos(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr))) + sin(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)))), L_th_h_mid_z*(cos(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) - sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b)))) - L_sh_h_z*(sin(q4_hr)*(cos(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) + sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b)))) - cos(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) - sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))))) - L_th_h_mid_x*(cos(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) + sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b)))) - L_sh_h_x*(sin(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) - sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b)))) + cos(q4_hr)*(cos(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) + sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))))), L_sh_h_x*(cos(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr))) - sin(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)))) + L_sh_h_z*(cos(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr))) + sin(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) + cos(phi_b)*cos(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(sin(psi_b)*sin(theta_b) + cos(psi_b)*cos(theta_b)*sin(phi_b)) + sin(q1_hr)*(cos(theta_b)*sin(psi_b) - cos(psi_b)*sin(phi_b)*sin(theta_b))) - cos(phi_b)*cos(psi_b)*cos(q2_hr)))), - L_sh_h_x*(cos(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b))) - sin(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)))) - L_sh_h_z*(cos(q4_hr)*(cos(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)) + sin(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr))) + sin(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) - cos(phi_b)*sin(psi_b)*sin(q2_hr)) - sin(q3_hr)*(sin(q2_hr)*(cos(q1_hr)*(cos(psi_b)*sin(theta_b) - cos(theta_b)*sin(phi_b)*sin(psi_b)) + sin(q1_hr)*(cos(psi_b)*cos(theta_b) + sin(phi_b)*sin(psi_b)*sin(theta_b))) + cos(phi_b)*cos(q2_hr)*sin(psi_b)))), - L_sh_h_x*(sin(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) - sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b)))) + cos(q4_hr)*(cos(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) + sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))))) - L_sh_h_z*(sin(q4_hr)*(cos(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) + sin(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b)))) - cos(q4_hr)*(cos(q3_hr)*(cos(q2_hr)*sin(phi_b) + sin(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))) - sin(q3_hr)*(sin(phi_b)*sin(q2_hr) - cos(q2_hr)*(cos(phi_b)*cos(q1_hr)*cos(theta_b) - cos(phi_b)*sin(q1_hr)*sin(theta_b))))), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -1147,93 +1216,35 @@ Jv_fl = reshape(Jv_fl,3,20);
 Jv_hr = reshape(Jv_hr,3,20);
 Jv_hl = reshape(Jv_hl,3,20);
 
-% Extended Jacobian for EE (foot) tasks
-Je = [Jv_fr; Jv_fl; Jv_hr; Jv_hl]; 
-
 % Body spatial Jacobian
 Jb = [eye(6), zeros(6,14)];
 
-%% Augmented Jacobian IK
-Je_pinv = pinv(Je);
+% Pose maintenance Jacobian
+J_pose = eye(20);
 
-% Extended task velocity vector for EE (foot) trajectories
-dpe = [dp0fr_d; dp0fl_d; dp0hr_d; dp0hl_d];
+%% IK
 
 % 6D body task velocity (linear and angular)
 vb = [dp0b_d; dqb_d]; 
 
-% Nullspace projector for foot tasks
-N1 = eye(20) - Je_pinv*Je; 
+% % Pose maintenance joint velocity
+% k_pose = 0.10; % Pose maintenance gain
+% dq_pose = k_pose*(q_joint_d - q_prev(7:20)); % Joint angles only, proportional pose maintance
+% dq_pose = [zeros(6,1); dq_pose]; % Adding body configuration variables as zeroes
+
+% Nullspace projectors
+Nb = eye(20) - pinv(Jb)*Jb;
+Nfr = eye(20) - pinv(Jv_fr)*Jv_fr;
+Nfl = eye(20) - pinv(Jv_fl)*Jv_fl;
+Nhr = eye(20) - pinv(Jv_hr)*Jv_hr;
+Nhl = eye(20) - pinv(Jv_hl)*Jv_hl;
 
 % Compute joint velocities (state vector time-derivative)
-dq = Je_pinv*dpe + pinv(Jb*N1)*(vb - Jb*Je_pinv*dpe);
-
-%% Successive method, body-feet scheme IK
-% 
-% % 6D body task velocity (linear and angular)
-% vb = [dp0b_d; dqb_d]; 
-% 
-% % Nullspace projectors
-% Nb = eye(20) - pinv(Jb)*Jb;
-% Nfr = eye(20) - pinv(Jv_fr)*Jv_fr;
-% Nfl = eye(20) - pinv(Jv_fl)*Jv_fl;
-% Nhr = eye(20) - pinv(Jv_hr)*Jv_hr;
-% Nhl = eye(20) - pinv(Jv_hl)*Jv_hl;
-% 
-% % Compute joint velocities (state vector time-derivative)
-% dq = pinv(Jb)*vb + ...
-%     Nb*(pinv(Jv_fr)*dp0fr_d + ...
-%     Nfr*(pinv(Jv_fl)*dp0fl_d + ...
-%     Nfl*(pinv(Jv_hr)*dp0hr_d + ...
-%     Nhr*(pinv(Jv_hl)*dp0hl_d))));
-
-%% Successive method, feet-body scheme IK
-% 
-% % 6D body task velocity (linear and angular)
-% vb = [dp0b_d; dqb_d]; 
-% 
-% % Nullspace projectors
-% Nb = eye(20) - pinv(Jb)*Jb;
-% Nfr = eye(20) - pinv(Jv_fr)*Jv_fr;
-% Nfl = eye(20) - pinv(Jv_fl)*Jv_fl;
-% Nhr = eye(20) - pinv(Jv_hr)*Jv_hr;
-% Nhl = eye(20) - pinv(Jv_hl)*Jv_hl;
-% 
-% % Compute joint velocities (state vector time-derivative)
-% dq = pinv(Jv_fr)*dp0fr_d + ...
-%     Nfr*(pinv(Jv_fl)*dp0fl_d + ...
-%     Nfl*(pinv(Jv_hr)*dp0hr_d + ...
-%     Nhr*(pinv(Jv_hl)*dp0hl_d + ...
-%     Nhl*(Jb&apos;*vb))));
-
-%% Extended Jacovian (all tasks) IK
-% % Extended Jacobian for all tasks
-% Je = [Jb; Jv_fr; Jv_fl; Jv_hr; Jv_hl]; 
-% Je_pinv = pinv(Je);
-% 
-% % Extended task velocity vector for EE (foot) trajectories
-% dpe = [vb; dp0fr_d; dp0fl_d; dp0hr_d; dp0hl_d];
-% 
-% % Compute joint velocities (state vector time-derivative)
-% dq = Je_pinv*dpe
-
-%% Extended Jacovian (body prioritized) IK
-% % Extended Jacobian for EE (foot) tasks
-% Je = [Jv_fr; Jv_fl; Jv_hr; Jv_hl]; 
-% Je_pinv = pinv(Je);
-% 
-% % 6D body task velocity (linear and angular)
-% vb = [dp0b_d; dqb_d]; 
-% 
-% % Extended task velocity vector for EE (foot) trajectories
-% dpe = [dp0fr_d; dp0fl_d; dp0hr_d; dp0hl_d];
-% 
-% % Nullspace projector for foot tasks
-% N1 = eye(20) - Je_pinv*Je; 
-% 
-% % Compute joint velocities (state vector time-derivative)
-% dq = Je_pinv*dpe + N1*Jb&apos;*vb; 
-% % dq = Je_pinv*dpe;
+dq = pinv(Jv_fr)*dp0fr_d + ...
+    Nfr*(pinv(Jv_fl)*dp0fl_d + ...
+    Nfl*(pinv(Jv_hr)*dp0hr_d + ...
+    Nhr*(pinv(Jv_hl)*dp0hl_d + ...
+    Nhl*(Jb&apos;*vb))));
 
 end</P>
       </eml>
@@ -1249,6 +1260,26 @@ end</P>
           <P Name="primitive">SF_DOUBLE_TYPE</P>
         </type>
         <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="60" name="q_joint_d">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
         <unit>
           <P Name="name">inherit</P>
         </unit>
@@ -1473,7 +1504,7 @@ end</P>
       </dst>
       <P Name="midPoint">[23.5747 24.9468]</P>
       <P Name="dataLimits">[21.175 25.975 14.625 42.575]</P>
-      <P Name="subviewer">61</P>
+      <P Name="subviewer">62</P>
       <P Name="drawStyle">SMART</P>
       <slide>
         <P Name="sticky">BOTH_STICK</P>
@@ -1482,20 +1513,20 @@ end</P>
     </transition>
     <junction SSID="3">
       <P Name="position">[23.5747 49.5747 7]</P>
-      <P Name="subviewer">61</P>
+      <P Name="subviewer">62</P>
       <P Name="type">CONNECTIVE_JUNCTION</P>
     </junction>
   </Children>
 </chart>
 
-__MWOPC_PART_BEGIN__ /simulink/stateflow/chart_77.xml
+__MWOPC_PART_BEGIN__ /simulink/stateflow/chart_79.xml
 <?xml version="1.0" encoding="utf-8"?>
-<chart id="77">
+<chart id="79">
   <P Name="name">MATLAB Function2</P>
   <P Name="windowPosition">[422 539.941 189 413]</P>
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
-  <P Name="viewObj">77</P>
+  <P Name="viewObj">79</P>
   <P Name="ssIdHighWaterMark">15</P>
   <P Name="decomposition">CLUSTER_CHART</P>
   <P Name="type">EML_CHART</P>
@@ -1510,62 +1541,47 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_77.xml
       <P Name="position">[18 64.5 118 66]</P>
       <P Name="fontSize">12</P>
       <P Name="superState">SUBCHART</P>
-      <P Name="subviewer">77</P>
+      <P Name="subviewer">79</P>
       <P Name="type">FUNC_STATE</P>
       <P Name="decomposition">CLUSTER_STATE</P>
       <eml>
         <P Name="isEML">1</P>
         <P Name="script">function [O, p] = traj_recov_diff(q, L_sh_f, L_sh_h, L_th_f, L_th_h, L_th_h_mid, L_b, W_b, L_h)
-% Computes forward kinematics for body and foot positions from joint
-%   angles, and outputs in a format used by prior work visualization tools.
-% 
-% Syntax: [O, p] = traj_recov_diff(q, L_sh_f, L_sh_h, L_th_f, L_th_h, L_th_h_mid, L_b, W_b, L_h)
-% 
-% Inputs: 
-%   q - state vector (floating base + joint angles):
-%       q = [p0b(1:3); theta_b; phi_b; psi_b; ...
-%            q_fr(1:3); q_fl(1:3); q_hr(1:4); q_hl(1:4)]
-%   L_sh_f, L_sh_h, L_th_f, L_th_h, L_th_h_mid, L_b, W_b, L_h - robot
-%   dimension parameters.
-% 
-% Outputs:
-%   O - position trajectories in visualization scipt format:
-%       O = [r_b(1:3);r_shd_fr(1:3);r_shd_fl(1:3);r_shd_hr(1:3);r_shd_hl(1:3);r_hip_fr(1:3);r_hip_fl(1:3);r_hip_hr(1:3);r_hip_hl(1:3);
-%           r_knee_fr(1:3);r_knee_fl(1:3);r_knee_hr(1:3);r_knee_hl(1:3);r_knee_mid_hr(1:3);r_knee_mid_hl(1:3);
-%           r_ankle_fr(1:3);r_ankle_fl(1:3);r_ankle_hr(1:3);r_ankle_hl(1:3)];
-%               (using notation from prior work)
-%   p - position vector:
-%       p = [p0b; q_b(1:3); p0fr(1:3); p0fl(1:3); p0hr(1:3); p0hl(1:3)];
-% 
-% By Stefan Van de Mosselaer, modified from code by Hossein Keshavarz and
-%   Stefan Van de Mosselaer.
-% 
-% 13-Dec-2024
-
 %% Input
+% Task Space
+% p=P(1:18);  % body position and orientation and feet positions
+% dp=P(19:36);
+% ddp=P(37:54);
+
 p0b = q(1:3); % body position
-theta_b = q(4); % Roll
-phi_b = q(5); % Pitch
-psi_b = q(6); % Yaw
+theta_b = q(4);
+phi_b = q(5);
+psi_b = q(6);
+
+% Angle Joints
+% q=P(55:68); % Joints angles and velocity
+
+% %% Global
+% global L_sh_f L_sh_h L_th_f L_th_h L_th_h_mid L_b W_b L_h
 
 %% Angle of Joints
-q_fr=q(7:9); % Front right leg
+q_fr=q(7:9);
 q1_fr=q_fr(1);
 q2_fr=q_fr(2);
 q3_fr=q_fr(3);
 
-q_fl=q(10:12); % Front left
+q_fl=q(10:12);
 q1_fl=q_fl(1);
 q2_fl=q_fl(2);
 q3_fl=q_fl(3);
 
-q_hr=q(13:16); % Hind right
+q_hr=q(13:16);
 q1_hr=q_hr(1);
 q2_hr=q_hr(2);
 q3_hr=q_hr(3);
 q4_hr=q_hr(4);
 
-q_hl=q(17:20); % Hind left
+q_hl=q(17:20);
 q1_hl=q_hl(1);
 q2_hl=q_hl(2);
 q3_hl=q_hl(3);
@@ -1576,7 +1592,8 @@ q4_hl=q_hl(4);
 R_b_x = rot(1,theta_b,4);
 R_b_y = rot(2,phi_b,4);
 R_b_z = rot(3,psi_b,4);
-R0b = R_b_y*R_b_z*R_b_x; % Body rotation matrix
+R0b = R_b_y*R_b_z*R_b_x;
+% TODO: correct order when we can make it consistent across entire framework
 
 % Front Right
 Rq1_fr = rot(1,q1_fr,4);
@@ -1603,27 +1620,28 @@ Rq4_hl = rot(2,q4_hl,4);
 %% Translation Matrix
 % Trunk
 P0b = trans([],p0b);
+%P_pl = trans([],d_b);
 
-% Front Right
+%Front Right
 Pb1_fr = trans([],[L_b/2,-W_b/2,0]);
 P12_fr = trans([],[L_h(1);-L_h(2);-L_h(3)]);
 P23_fr = trans([],[L_th_f(1);-L_th_f(2);-L_th_f(3)]);
 P34_fr = trans([],[-L_sh_f(1);-L_sh_f(2);-L_sh_f(3)]);
 
-% Front Left
+%Front Left
 Pb1_fl = trans([],[L_b/2,W_b/2,0]);
 P12_fl = trans([],[L_h(1);L_h(2);-L_h(3)]);
 P23_fl = trans([],[L_th_f(1);L_th_f(2);-L_th_f(3)]);
 P34_fl = trans([],[-L_sh_f(1);L_sh_f(2);-L_sh_f(3)]);
 
-% Hind Right
+%Hind Right
 Pb1_hr = trans([],[-L_b/2,-W_b/2,0]);
 P12_hr = trans([],[-L_h(1);-L_h(2);-L_h(3)]);
 P23_hr = trans([],[-L_th_h(1);-L_th_h(2);-L_th_h(3)]);
 P34_hr = trans([],[-L_th_h_mid(1);-L_th_h_mid(2);-L_th_h_mid(3)]);
 P45_hr = trans([],[-L_sh_h(1);-L_sh_h(2);-L_sh_h(3)]);
 
-% Hind Left
+%Hind Left
 Pb1_hl = trans([],[-L_b/2,W_b/2,0]);
 P12_hl = trans([],[-L_h(1);L_h(2);-L_h(3)]);
 P23_hl = trans([],[-L_th_h(1);L_th_h(2);-L_th_h(3)]);
@@ -1631,31 +1649,25 @@ P34_hl = trans([],[-L_th_h_mid(1);L_th_h_mid(2);-L_th_h_mid(3)]);
 P45_hl = trans([],[-L_sh_h(1);L_sh_h(2);-L_sh_h(3)]);
 
 %% Position
-r_b =        P0b*R0b*[0;0;0;1]; % Body position
+r_b =        P0b*R0b*[0;0;0;1];
 
-% Joint 1 (shoulder):
 r_shd_fr=   P0b*R0b*Pb1_fr*[0;0;0;1];
 r_shd_fl=   P0b*R0b*Pb1_fl*[0;0;0;1];
 r_shd_hr=   P0b*R0b*Pb1_hr*[0;0;0;1];
 r_shd_hl=   P0b*R0b*Pb1_hl*[0;0;0;1];
 
-% Joint 2 (hip):
 r_hip_fr=   P0b*R0b*Pb1_fr*Rq1_fr*P12_fr*[0;0;0;1];
 r_hip_fl=   P0b*R0b*Pb1_fl*Rq1_fl*P12_fl*[0;0;0;1];
 r_hip_hr=   P0b*R0b*Pb1_hr*Rq1_hr*P12_hr*[0;0;0;1];
 r_hip_hl=   P0b*R0b*Pb1_hl*Rq1_hl*P12_hl*[0;0;0;1];
 
-% Joint 3 (knee):
 r_knee_fr=  P0b*R0b*Pb1_fr*Rq1_fr*P12_fr*Rq2_fr*P23_fr*[0;0;0;1];
 r_knee_fl=  P0b*R0b*Pb1_fl*Rq1_fl*P12_fl*Rq2_fl*P23_fl*[0;0;0;1];
 r_knee_hr=  P0b*R0b*Pb1_hr*Rq1_hr*P12_hr*Rq2_hr*P23_hr*[0;0;0;1];
 r_knee_hl=  P0b*R0b*Pb1_hl*Rq1_hl*P12_hl*Rq2_hl*P23_hl*[0;0;0;1];
-
-% Joint 4 (hind ankle) - forgive the conflicting notation, some is legacy:
 r_knee_mid_hr=   P0b*R0b*Pb1_hr*Rq1_hr*P12_hr*Rq2_hr*P23_hr*Rq3_hr*P34_hr*[0;0;0;1];
 r_knee_mid_hl=   P0b*R0b*Pb1_hl*Rq1_hl*P12_hl*Rq2_hl*P23_hl*Rq3_hl*P34_hl*[0;0;0;1];
 
-% Feet:
 r_ankle_fr=   P0b*R0b*Pb1_fr*Rq1_fr*P12_fr*Rq2_fr*P23_fr*Rq3_fr*P34_fr*[0;0;0;1];
 r_ankle_fl=   P0b*R0b*Pb1_fl*Rq1_fl*P12_fl*Rq2_fl*P23_fl*Rq3_fl*P34_fl*[0;0;0;1];
 r_ankle_hr=   P0b*R0b*Pb1_hr*Rq1_hr*P12_hr*Rq2_hr*P23_hr*Rq3_hr*P34_hr*Rq4_hr*P45_hr*[0;0;0;1];
@@ -1906,7 +1918,7 @@ end</P>
       </dst>
       <P Name="midPoint">[23.5747 24.9468]</P>
       <P Name="dataLimits">[21.175 25.975 14.625 42.575]</P>
-      <P Name="subviewer">77</P>
+      <P Name="subviewer">79</P>
       <P Name="drawStyle">SMART</P>
       <slide>
         <P Name="sticky">BOTH_STICK</P>
@@ -1915,7 +1927,7 @@ end</P>
     </transition>
     <junction SSID="3">
       <P Name="position">[23.5747 49.5747 7]</P>
-      <P Name="subviewer">77</P>
+      <P Name="subviewer">79</P>
       <P Name="type">CONNECTIVE_JUNCTION</P>
     </junction>
   </Children>
@@ -1924,25 +1936,25 @@ end</P>
 __MWOPC_PART_BEGIN__ /simulink/stateflow/machine.xml
 <?xml version="1.0" encoding="utf-8"?>
 <Stateflow>
-  <machine id="60">
+  <machine id="61">
     <P Name="sfVersion">80000051</P>
     <Children>
-      <target id="93" name="sfun">
+      <target id="95" name="sfun">
         <P Name="description">Default Simulink S-Function Target.</P>
       </target>
-      <chart Ref="chart_61"/>
-      <chart Ref="chart_77"/>
+      <chart Ref="chart_62"/>
+      <chart Ref="chart_79"/>
     </Children>
   </machine>
-  <instance id="76">
-    <P Name="machine">60</P>
+  <instance id="78">
+    <P Name="machine">61</P>
     <P Name="name">MATLAB Function1</P>
-    <P Name="chart">61</P>
+    <P Name="chart">62</P>
   </instance>
-  <instance id="92">
-    <P Name="machine">60</P>
+  <instance id="94">
+    <P Name="machine">61</P>
     <P Name="name">MATLAB Function2</P>
-    <P Name="chart">77</P>
+    <P Name="chart">79</P>
   </instance>
 </Stateflow>
 
@@ -1957,15 +1969,25 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_73.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[223, 338, 826, 833]</P>
-  <P Name="SIDHighWatermark">81</P>
+  <P Name="SIDHighWatermark">82</P>
   <Block BlockType="Inport" Name="d" SID="73::1">
     <P Name="Position">[20, 101, 40, 119]</P>
     <P Name="ZOrder">-1</P>
   </Block>
-  <Block BlockType="Inport" Name="q_prev" SID="73::25">
+  <Block BlockType="Inport" Name="q_joint_d" SID="73::82">
     <P Name="Position">[20, 136, 40, 154]</P>
-    <P Name="ZOrder">16</P>
+    <P Name="ZOrder">20</P>
     <P Name="Port">2</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">q_joint_d</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="q_prev" SID="73::25">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">16</P>
+    <P Name="Port">3</P>
   </Block>
   <Block BlockType="Demux" Name=" Demux " SID="73::80">
     <PortCounts in="1" out="1"/>
@@ -1975,12 +1997,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_73.xml
   </Block>
   <Block BlockType="S-Function" Name=" SFunction " SID="73::79">
     <P Name="Tag">Stateflow S-Function 1</P>
-    <PortCounts in="2" out="2"/>
-    <P Name="Position">[180, 100, 230, 160]</P>
+    <PortCounts in="3" out="2"/>
+    <P Name="Position">[180, 100, 230, 180]</P>
     <P Name="ZOrder">17</P>
     <P Name="FunctionName">sf_sfun</P>
     <P Name="Parameters">L_b,L_h,L_sh_f,L_sh_h,L_th_f,L_th_h,L_th_h_mid,W_b</P>
-    <P Name="PortCounts">[2 2]</P>
+    <P Name="PortCounts">[3 2]</P>
     <P Name="SFunctionDeploymentMode">off</P>
     <P Name="EnableBusSupport">on</P>
     <P Name="SFcnIsStateOwnerBlock">off</P>
@@ -1999,30 +2021,34 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_73.xml
     <P Name="ZOrder">-5</P>
   </Block>
   <Line>
-    <P Name="ZOrder">1932</P>
+    <P Name="ZOrder">1943</P>
     <P Name="Src">73::1#out:1</P>
-    <P Name="Points">[120, 0]</P>
     <P Name="Dst">73::79#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1933</P>
-    <P Name="Src">73::25#out:1</P>
+    <P Name="ZOrder">1944</P>
+    <P Name="Src">73::82#out:1</P>
     <P Name="Dst">73::79#in:2</P>
   </Line>
   <Line>
+    <P Name="ZOrder">1945</P>
+    <P Name="Src">73::25#out:1</P>
+    <P Name="Dst">73::79#in:3</P>
+  </Line>
+  <Line>
     <P Name="Name">dq</P>
-    <P Name="ZOrder">1934</P>
+    <P Name="ZOrder">1946</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">73::79#out:2</P>
     <P Name="Dst">73::5#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1935</P>
+    <P Name="ZOrder">1947</P>
     <P Name="Src">73::80#out:1</P>
     <P Name="Dst">73::81#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1936</P>
+    <P Name="ZOrder">1948</P>
     <P Name="Src">73::79#out:1</P>
     <P Name="Dst">73::80#in:1</P>
   </Line>
@@ -2115,11 +2141,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[1720, 0, 3440, 1392]</P>
+  <P Name="Open">on</P>
   <P Name="ZoomFactor">182</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">102</P>
+  <P Name="SIDHighWatermark">107</P>
   <Block BlockType="Clock" Name="Clock2" SID="52">
-    <P Name="Position">[630, 420, 650, 440]</P>
+    <P Name="Position">[625, 255, 645, 275]</P>
     <P Name="ZOrder">27</P>
   </Block>
   <Block BlockType="Integrator" Name="Integrator" SID="75">
@@ -2129,8 +2156,8 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="InitialConditionSource">external</P>
   </Block>
   <Block BlockType="SubSystem" Name="MATLAB Function1" SID="73">
-    <PortCounts in="2" out="1"/>
-    <P Name="Position">[855, 403, 930, 512]</P>
+    <PortCounts in="3" out="1"/>
+    <P Name="Position">[830, 405, 945, 515]</P>
     <P Name="ZOrder">45</P>
     <P Name="LibrarySourceBlock">simulink/User-Defined
 Functions/MATLAB Function</P>
@@ -2248,9 +2275,44 @@ Functions/MATLAB Function</P>
       </Port>
     </PortProperties>
   </Block>
+  <Block BlockType="Concatenate" Name="Vector&#xA;Concatenate" SID="107">
+    <PortCounts in="4" out="1"/>
+    <P Name="Position">[725, 441, 730, 479]</P>
+    <P Name="ZOrder">73</P>
+    <P Name="NumInputs">4</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">q_joint_d</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Constant" Name="q_fl_d" SID="104">
+    <P Name="Position">[650, 395, 690, 445]</P>
+    <P Name="ZOrder">70</P>
+    <P Name="Value">[0.0; 1; -2.5]</P>
+    <P Name="VectorParams1D">off</P>
+  </Block>
+  <Block BlockType="Constant" Name="q_fr_d" SID="103">
+    <P Name="Position">[650, 315, 690, 365]</P>
+    <P Name="ZOrder">69</P>
+    <P Name="Value">[0.0; 1; -2.5]</P>
+    <P Name="VectorParams1D">off</P>
+  </Block>
+  <Block BlockType="Constant" Name="q_hl_d" SID="106">
+    <P Name="Position">[650, 565, 690, 625]</P>
+    <P Name="ZOrder">72</P>
+    <P Name="Value">[0.0; -1.2; 2; -2.5]</P>
+    <P Name="VectorParams1D">off</P>
+  </Block>
+  <Block BlockType="Constant" Name="q_hr_d" SID="105">
+    <P Name="Position">[650, 475, 690, 535]</P>
+    <P Name="ZOrder">71</P>
+    <P Name="Value">[0.0; -1.2; 2; -2.5]</P>
+    <P Name="VectorParams1D">off</P>
+  </Block>
   <Block BlockType="MATLABFcn" Name="taskspace_traj" SID="86">
     <PortCounts in="1" out="1"/>
-    <P Name="Position">[700, 415, 770, 445]</P>
+    <P Name="Position">[695, 250, 765, 280]</P>
     <P Name="ZOrder">58</P>
     <P Name="MATLABFcn">taskspace_traj</P>
   </Block>
@@ -2268,7 +2330,7 @@ Functions/MATLAB Function</P>
   <Line>
     <P Name="ZOrder">120</P>
     <P Name="Src">73#out:1</P>
-    <P Name="Points">[23, 0]</P>
+    <P Name="Points">[17, 0]</P>
     <Branch>
       <P Name="ZOrder">191</P>
       <P Name="Points">[0, -140]</P>
@@ -2301,35 +2363,38 @@ Functions/MATLAB Function</P>
   <Line>
     <P Name="ZOrder">150</P>
     <P Name="Src">86#out:1</P>
-    <P Name="Points">[35, 0]</P>
+    <P Name="Points">[27, 0]</P>
     <Branch>
-      <P Name="ZOrder">198</P>
-      <P Name="Points">[0, 187; 0, -2]</P>
-      <P Name="Dst">102#in:1</P>
-    </Branch>
-    <Branch>
-      <P Name="ZOrder">194</P>
-      <P Name="Points">[0, -165]</P>
+      <P Name="ZOrder">236</P>
       <P Name="Dst">98#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">192</P>
-      <P Name="Dst">73#in:1</P>
+      <P Name="ZOrder">216</P>
+      <P Name="Points">[0, 160]</P>
+      <Branch>
+        <P Name="ZOrder">235</P>
+        <P Name="Dst">73#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">214</P>
+        <P Name="Points">[0, 190]</P>
+        <P Name="Dst">102#in:1</P>
+      </Branch>
     </Branch>
   </Line>
   <Line>
     <P Name="ZOrder">169</P>
     <P Name="Src">76#out:1</P>
-    <P Name="Points">[-20, 0]</P>
+    <P Name="Points">[-15, 0; 0, -1]</P>
     <Branch>
       <P Name="ZOrder">171</P>
-      <P Name="Points">[0, -65]</P>
+      <P Name="Points">[0, -64]</P>
       <P Name="Dst">75#in:2</P>
     </Branch>
     <Branch>
       <P Name="ZOrder">170</P>
-      <P Name="Points">[-125, 0]</P>
-      <P Name="Dst">73#in:2</P>
+      <P Name="Points">[-155, 0]</P>
+      <P Name="Dst">73#in:3</P>
     </Branch>
   </Line>
   <Line>
@@ -2359,6 +2424,37 @@ Functions/MATLAB Function</P>
     <P Name="Points">[175, 0; 0, -65]</P>
     <P Name="Dst">100#in:2</P>
   </Line>
+  <Line>
+    <P Name="ZOrder">209</P>
+    <P Name="Src">103#out:1</P>
+    <P Name="Points">[13, 0; 0, 105]</P>
+    <P Name="Dst">107#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">210</P>
+    <P Name="Src">104#out:1</P>
+    <P Name="Points">[4, 0; 0, 35]</P>
+    <P Name="Dst">107#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">211</P>
+    <P Name="Src">105#out:1</P>
+    <P Name="Points">[6, 0; 0, -40]</P>
+    <P Name="Dst">107#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">212</P>
+    <P Name="Src">106#out:1</P>
+    <P Name="Points">[16, 0; 0, -120]</P>
+    <P Name="Dst">107#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">q_joint_d</P>
+    <P Name="ZOrder">213</P>
+    <P Name="Labels">[0, 1]</P>
+    <P Name="Src">107#out:1</P>
+    <P Name="Dst">73#in:2</P>
+  </Line>
 </System>
 
 __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
@@ -2383,18 +2479,18 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <Object ObjectID="5">
           <P Name="IsActive" Class="logical">1</P>
           <P Name="IsTabbed" Class="logical">1</P>
-          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
-          <P Name="LoadSaveID" Class="char">73</P>
+          <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
+          <P Name="LoadSaveID" Class="char">0</P>
           <P Name="Extents" Class="double">[1680.0, 1156.0]</P>
-          <P Name="ZoomFactor" Class="double">1.0</P>
-          <P Name="Offset" Class="double">[0.0, 0.0]</P>
-          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+          <P Name="ZoomFactor" Class="double">1.8201516793066086</P>
+          <P Name="Offset" Class="double">[573.44146134732227, 158.00125495750819]</P>
+          <P Name="SceneRectInView" Class="double">[573.44146134732227, 158.00125495750819, 923.00000000000011, 635.11190476190484]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
-          <P Name="LoadSaveID" Class="char">74</P>
+          <P Name="LoadSaveID" Class="char">73</P>
           <P Name="Extents" Class="double">[1680.0, 1156.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
@@ -2403,12 +2499,12 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         <Object ObjectID="7">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
-          <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
-          <P Name="LoadSaveID" Class="char">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">74</P>
           <P Name="Extents" Class="double">[1680.0, 1156.0]</P>
-          <P Name="ZoomFactor" Class="double">1.8201516793066086</P>
-          <P Name="Offset" Class="double">[586.14419944255974, 176.53570287626923]</P>
-          <P Name="SceneRectInView" Class="double">[586.14419944255974, 176.53570287626923, 923.00000000000011, 635.11190476190484]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
         </Object>
         <Object ObjectID="8">
           <P Name="IsActive" Class="logical">0</P>
@@ -2443,6 +2539,30 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       </Array>
       <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*4">
         <Object ObjectID="11">
+          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
+          <P Name="ID" Class="char">Property Inspector</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char"/>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Right</P>
+          <P Name="Width" Class="int32">640</P>
+          <P Name="Height" Class="int32">480</P>
+          <P Name="Minimized" Class="char">Unset</P>
+        </Object>
+        <Object ObjectID="12">
+          <P Name="Type" Class="char">GLUE2:SpreadSheet</P>
+          <P Name="ID" Class="char">ModelData</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char">DataView.createSpreadSheetComponent</P>
+          <P Name="UserData" Class="char"/>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Bottom</P>
+          <P Name="Width" Class="int32">640</P>
+          <P Name="Height" Class="int32">480</P>
+          <P Name="Minimized" Class="char">Unset</P>
+        </Object>
+        <Object ObjectID="13">
           <P Name="Type" Class="char">GLUE2:DDG Component</P>
           <P Name="ID" Class="char">SymbolManager</P>
           <P Name="Visible" Class="logical">0</P>
@@ -2454,7 +2574,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Height" Class="int32">1189</P>
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
-        <Object ObjectID="12">
+        <Object ObjectID="14">
           <P Name="Type" Class="char">Simulink:Editor:ReferencedFiles</P>
           <P Name="ID" Class="char">Referenced Files</P>
           <P Name="Visible" Class="logical">0</P>
@@ -2467,32 +2587,8 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Height" Class="int32">480</P>
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
-        <Object ObjectID="13">
-          <P Name="Type" Class="char">GLUE2:SpreadSheet</P>
-          <P Name="ID" Class="char">ModelData</P>
-          <P Name="Visible" Class="logical">0</P>
-          <P Name="CreateCallback" Class="char">DataView.createSpreadSheetComponent</P>
-          <P Name="UserData" Class="char"/>
-          <P Name="Floating" Class="logical">0</P>
-          <P Name="DockPosition" Class="char">Bottom</P>
-          <P Name="Width" Class="int32">640</P>
-          <P Name="Height" Class="int32">480</P>
-          <P Name="Minimized" Class="char">Unset</P>
-        </Object>
-        <Object ObjectID="14">
-          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
-          <P Name="ID" Class="char">Property Inspector</P>
-          <P Name="Visible" Class="logical">0</P>
-          <P Name="CreateCallback" Class="char"/>
-          <P Name="UserData" Class="char"/>
-          <P Name="Floating" Class="logical">0</P>
-          <P Name="DockPosition" Class="char">Right</P>
-          <P Name="Width" Class="int32">640</P>
-          <P Name="Height" Class="int32">480</P>
-          <P Name="Minimized" Class="char">Unset</P>
-        </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAE0AAAEwfwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD8AAAAeQAABMEAAAAAAP////oAAAABAgAAAAL7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAACOAEwAaQBiAHIAYQByAHkAQgByAG8AdwBzAGUAcgAyACAATABpAGIAcgBhAHIAeQBCAHIAbwB3AHMAZQByAFMAdAB1AGQAaQBvAEMAbwBtAHAAbwBuAGUAbgB0AC8AdABlAHMAdABfAGQAaQBmAGYAXwBJAEsAXwB0AHIAYQBqAGUAYwB0AG8AcgBpAGUAcwAAAAAA/////wAAAAAAAAAA+wAAAGAAUwBpAG0AdQBsAGkAbgBrADoARQBkAGkAdABvAHIAOgBSAGUAZgBlAHIAZQBuAGMAZQBkAEYAaQBsAGUAcwAvAFIAZQBmAGUAcgBlAG4AYwBlAGQAIABGAGkAbABlAHMAAAAAAP////8AAACMAP///wAAAAEAAALOAAAEwfwCAAAAAvsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAAD/////AAABrAD////7AAAAQgBHAEwAVQBFADIAOgBEAEQARwAgAEMAbwBtAHAAbwBuAGUAbgB0AC8AUwB5AG0AYgBvAGwATQBhAG4AYQBnAGUAcgAAAAB5AAAEwQAAACAA////AAAAAwAABrYAAAQw/AEAAAAB/AAAAAAAAAa2AAAAAAD////6/////wEAAAAC+wAAADYARwBMAFUARQAyADoAUwBwAHIAZQBhAGQAUwBoAGUAZQB0AC8ATQBvAGQAZQBsAEQAYQB0AGEAAAAAAP////8AAAEeAP////v/////AAAAAAD/////AAABWQD///8AAAa2AAAEwQAAAAEAAAACAAAAAQAAAAL8AAAAAA==</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAE0AAAEwfwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD8AAAAeQAABMEAAAAAAP////oAAAABAgAAAAL7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAACOAEwAaQBiAHIAYQByAHkAQgByAG8AdwBzAGUAcgAyACAATABpAGIAcgBhAHIAeQBCAHIAbwB3AHMAZQByAFMAdAB1AGQAaQBvAEMAbwBtAHAAbwBuAGUAbgB0AC8AdABlAHMAdABfAGQAaQBmAGYAXwBJAEsAXwB0AHIAYQBqAGUAYwB0AG8AcgBpAGUAcwAAAAAA/////wAAAAAAAAAA+wAAAGAAUwBpAG0AdQBsAGkAbgBrADoARQBkAGkAdABvAHIAOgBSAGUAZgBlAHIAZQBuAGMAZQBkAEYAaQBsAGUAcwAvAFIAZQBmAGUAcgBlAG4AYwBlAGQAIABGAGkAbABlAHMAAAAAAP////8AAACMAP///wAAAAEAAALOAAAEwfwCAAAAAvsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAAD/////AAABrAD////7AAAAQgBHAEwAVQBFADIAOgBEAEQARwAgAEMAbwBtAHAAbwBuAGUAbgB0AC8AUwB5AG0AYgBvAGwATQBhAG4AYQBnAGUAcgAAAAB5AAAEwQAAACAA////AAAAAwAABrYAAAQq/AEAAAAB/AAAAAAAAAa2AAAAAAD////6/////wEAAAAC+wAAADYARwBMAFUARQAyADoAUwBwAHIAZQBhAGQAUwBoAGUAZQB0AC8ATQBvAGQAZQBsAEQAYQB0AGEAAAAAAP////8AAAEeAP////v/////AAAAAAD/////AAABWQD///8AAAa2AAAEwQAAAAEAAAACAAAAAQAAAAL8AAAAAA==</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">cdd8e717-37fa-4611-84f0-2f84c122122b</P>
     </Object>
